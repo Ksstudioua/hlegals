@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2019 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="678px" height="520px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 1918.71 1470.66"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil2 {fill:none}
+    .fil1 {fill:#F0145A}
+    .fil0 {fill:url(#id4)}
+   ]]>
+  </style>
+    <mask id="id0">
+  <linearGradient id="id1" gradientUnits="userSpaceOnUse" x1="512.66" y1="1467.2" x2="509.31" y2="1255.02">
+   <stop offset="0" style="stop-opacity:0; stop-color:white"/>
+   <stop offset="0.380392" style="stop-opacity:-127.502; stop-color:white"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:white"/>
+  </linearGradient>
+     <rect style="fill:url(#id1)" x="867.25" y="512.47" width="240.16" height="279.55"/>
+    </mask>
+    <mask id="id2">
+  <linearGradient id="id3" gradientUnits="userSpaceOnUse" x1="512.66" y1="1467.2" x2="509.31" y2="1255.02">
+   <stop offset="0" style="stop-opacity:0; stop-color:white"/>
+   <stop offset="0.380392" style="stop-opacity:-127.502; stop-color:white"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:white"/>
+  </linearGradient>
+     <rect style="fill:url(#id3)" x="441.65" y="333.99" width="829.36" height="1136.78"/>
+    </mask>
+  <linearGradient id="id4" gradientUnits="userSpaceOnUse" x1="867.15" y1="736.31" x2="1100.09" y2="857.86">
+   <stop offset="0" style="stop-opacity:1; stop-color:#F0145A"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#693264"/>
+  </linearGradient>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2205011598336">
+   <polygon class="fil0" style="mask:url(#id0)" points="1076.61,791.91 867.36,791.91 959.56,512.58 1063.87,513.19 1003.3,697.41 1107.3,697.47 "/>
+   <path class="fil1" style="mask:url(#id2)" d="M441.76 1470.66c126.58,-388.1 307.79,-943.68 336.07,-1030.37 20.66,-63.32 79.88,-106.19 146.71,-106.19l185.59 0c55.97,0 102.68,23.55 131.72,63.35 29.02,39.79 37.26,90.72 20.33,142.66 -16.94,51.95 -32.95,100.99 -47.6,145.92 -19.79,60.67 -74.6,102.48 -137.97,105.88 0,0 -0.33,-0.11 88.46,-272.35 7.84,-24.02 4.98,-47.54 -7.33,-64.4 -12.3,-16.87 -33.04,-26.85 -60.49,-26.85l-159.26 0c-31.27,0 -58.98,20.06 -68.66,49.69l-323.75 992.66 -103.82 0z"/>
+  </g>
+  <rect class="fil2" width="1918.71" height="1467.25"/>
+ </g>
+</svg>

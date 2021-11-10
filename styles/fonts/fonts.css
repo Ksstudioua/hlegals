@@ -1,0 +1,109 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'TT Norms';
+  src: url('TTNorms-Bold.eot');
+  src: local('TT Norms Bold'), local('TTNorms-Bold'),
+    url('TTNorms-Bold.eot?#iefix') format('embedded-opentype'),
+    url('TTNorms-Bold.woff2') format('woff2'),
+    url('TTNorms-Bold.woff') format('woff'),
+    url('TTNorms-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Norms';
+  src: url('TTNorms-Medium.eot');
+  src: local('TT Norms Medium'), local('TTNorms-Medium'),
+    url('TTNorms-Medium.eot?#iefix') format('embedded-opentype'),
+    url('TTNorms-Medium.woff2') format('woff2'),
+    url('TTNorms-Medium.woff') format('woff'),
+    url('TTNorms-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Norms';
+  src: url('TTNorms-Regular.eot');
+  src: local('TT Norms Regular'), local('TTNorms-Regular'),
+    url('TTNorms-Regular.eot?#iefix') format('embedded-opentype'),
+    url('TTNorms-Regular.woff2') format('woff2'),
+    url('TTNorms-Regular.woff') format('woff'),
+    url('TTNorms-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url('icomoon.eot?y18zpz');
+  src: url('icomoon.eot?y18zpz#iefix') format('embedded-opentype'),
+    url('icomoon.ttf?y18zpz') format('truetype'),
+    url('icomoon.woff?y18zpz') format('woff'),
+    url('icomoon.svg?y18zpz#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Slash_l:before {
+  content: '\e900';
+}
+.icon-Slash_r:after {
+  content: '\e901';
+}
+.icon-basket:before {
+  content: '\e902';
+}
+.icon-case:before {
+  content: '\e903';
+}
+.icon-case2:before {
+  content: '\e904';
+}
+.icon-command:before {
+  content: '\e905';
+}
+.icon-court:before {
+  content: '\e906';
+}
+.icon-facebook:before {
+  content: '\e907';
+}
+.icon-facebook1:before {
+  content: '\e908';
+}
+.icon-flag:before {
+  content: '\e909';
+}
+.icon-linkedin:before {
+  content: '\e90a';
+}
+.icon-sanwich:before {
+  content: '\e90b';
+}
+.icon-shield:before {
+  content: '\e90c';
+}
+.icon-star:before {
+  content: '\e90d';
+}
+.icon-structure:before {
+  content: '\e90e';
+}
+.icon-telegram:before {
+  content: '\e90f';
+}
