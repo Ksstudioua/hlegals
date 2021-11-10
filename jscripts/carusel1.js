@@ -53,3 +53,33 @@ function carusel1(set) {
   Txt.innerHTML = info[set - 1][2]
   grandSubTitle.innerHTML = info[set - 1][0]
 }
+
+function carusel1Load() {
+  //++++++++++++++++++++++++++++++++++++++++++
+  //++++++++++ CARUSEL 1 ONLOAD ++++++++++++++
+  //++++++++++++++++++++++++++++++++++++++++++
+  grandSubTitle.innerHTML = info[0][0]
+  Title.innerHTML = info[0][1]
+  Txt.innerHTML = info[0][2]
+
+  for (let createSel = 0; createSel < info.length; createSel++) {
+    let addNewSelector = document.createElement('div')
+    addNewSelector.classList.add('sel')
+    addNewSelector.setAttribute('onclick', `carusel1(${createSel + 1})`)
+    carusel1_Selectors.append(addNewSelector)
+  }
+  for (let createSel = 0; createSel < info.length; createSel++) {
+    let addNewGrandTitle = document.createElement('a')
+    addNewGrandTitle.classList.add('hero')
+    addNewGrandTitle.classList.add('bold')
+    addNewGrandTitle.classList.add('c7')
+    addNewGrandTitle.setAttribute('onclick', `carusel1(${createSel + 1})`)
+    addNewGrandTitle.innerHTML = info[`${createSel}`][0]
+    grandTitle.append(addNewGrandTitle)
+  }
+
+  grandTitle.children[0].classList.add('active')
+  carusel1_Selectors.children[0].classList.add('active')
+}
+
+window.addEventListener('load', carusel1Load)

@@ -11,6 +11,7 @@ let direction = 0
 //+++++++++++++++++++++++++++++++++++++++++++++++
 
 window.addEventListener('resize', stable)
+window.addEventListener('load', myBigCarusel)
 
 setInterval(autoPlay, 30000)
 //----------------------------------------------
@@ -76,33 +77,7 @@ function selectorclear() {
   }
 }
 
-window.onload = function () {
-  //++++++++++++++++++++++++++++++++++++++++++
-  //++++++++++ CARUSEL 1 ONLOAD ++++++++++++++
-  //++++++++++++++++++++++++++++++++++++++++++
-  grandSubTitle.innerHTML = info[0][0]
-  Title.innerHTML = info[0][1]
-  Txt.innerHTML = info[0][2]
-
-  for (let createSel = 0; createSel < info.length; createSel++) {
-    let addNewSelector = document.createElement('div')
-    addNewSelector.classList.add('sel')
-    addNewSelector.setAttribute('onclick', `carusel1(${createSel + 1})`)
-    carusel1_Selectors.append(addNewSelector)
-  }
-  for (let createSel = 0; createSel < info.length; createSel++) {
-    let addNewGrandTitle = document.createElement('a')
-    addNewGrandTitle.classList.add('hero')
-    addNewGrandTitle.classList.add('bold')
-    addNewGrandTitle.classList.add('c7')
-    addNewGrandTitle.setAttribute('onclick', `carusel1(${createSel + 1})`)
-    addNewGrandTitle.innerHTML = info[`${createSel}`][0]
-    grandTitle.append(addNewGrandTitle)
-  }
-
-  grandTitle.children[0].classList.add('active')
-  carusel1_Selectors.children[0].classList.add('active')
-
+function myBigCarusel() {
   //++++++++++++++++++++++++++++++++++++++++++
   //++++++++++ CARUSEL BIG ONLOAD ++++++++++++++
   //++++++++++++++++++++++++++++++++++++++++++

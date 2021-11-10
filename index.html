@@ -126,10 +126,16 @@
               <div class="icon-Slash_r slash-modify"> </div>
             </div>
           </div><span class="lang c1"> <span class="langItem active" onclick="mylang('ua')" id="ua">ук</span><span class="langItem" onclick="mylang('ru')" id="ru">ру</span><span class="langItem" onclick="mylang('en')" id="en">en </span></span><span class="adress c1">Одеса, Адміральський пр.,3</span><span class="phone c1" href="tel:+80503901591" title="чекаємо на ваш дзвінок">+38(050)390 15 91</span><a class="icon-box c1" href="http://facebook.com" target="_blank"><span class="icon-facebook"></span></a>
-          <nav class="navigation c1"> <a href="#">про нас</a><a href="services.html">послуги</a><a href="#">команда</a><a href="#">публікації </a><a href="#">контакти</a></nav>
+          <nav class="navigation c1"> 
+            <div class="item"><a href="#">про нас</a></div>
+            <div class="item" id="navservices"><a href="services.html">послуги</a></div>
+            <div class="item"> <a href="#">команда</a></div>
+            <div class="item"><a href="#">публікації </a></div>
+            <div class="item"><a href="#">контакти</a></div>
+          </nav>
           <div class="burger-menu" onclick="myburger()">
             <div class="icon-sanwich"></div>
-            <div class="dropdown bg1"><a href="">нас</a><a class="item c3" href="services.html">послуги</a><a href="">команда</a><a href="">публікації </a><a href="">контакти</a></div>
+            <div class="dropdown bg1 c3"><a href="">нас</a><a onclick="url('services.html')" id="burgservices">послуги</a><a href="">команда</a><a href="">публікації </a><a href="">контакти</a></div>
           </div>
         </header>
       </div>
@@ -234,7 +240,7 @@
     </div>
     <div class="shadow1"> </div>
     <div class="shadow2"></div>
-    <div class="page-width"> 
+    <div class="page-width">
       <div class="myBigCaruselWrap">
         <div class="myBigCaruselFrame"> 
           <div class="myBigCaruselFrameLine">
@@ -453,8 +459,8 @@
         </div>
       </footer>
     </div>
-    <script src="jscripts/myscripts.js"> </script>
     <script src="jscripts/carusel1.js"> </script>
     <script src="jscripts/myBigCarusel.js"></script>
+    <script src="jscripts/myscripts.js"> </script>
   </body>
 </html>

@@ -11,7 +11,7 @@
   </head>
   <body class="introduction c2" onload="titleOn('послуги')">
     <div class="gradient-wrap"> 
-      <div class="page-width">
+      <div class="page-width c1">
         <header class="header">
           <div class="logo-wrap"><a class="logo" href="index.html"><?xml version="1.0" encoding="UTF-8" ?>
 <?xml-stylesheet href="#logo" type="text/css"?>
@@ -126,21 +126,16 @@
               <div class="icon-Slash_r slash-modify"> </div>
             </div>
           </div><span class="lang c1"> <span class="langItem active" onclick="mylang('ua')" id="ua">ук</span><span class="langItem" onclick="mylang('ru')" id="ru">ру</span><span class="langItem" onclick="mylang('en')" id="en">en </span></span><span class="adress c1">Одеса, Адміральський пр.,3</span><span class="phone c1" href="tel:+80503901591" title="чекаємо на ваш дзвінок">+38(050)390 15 91</span><a class="icon-box c1" href="http://facebook.com" target="_blank"><span class="icon-facebook"></span></a>
-          <nav class="navigation"> <a href="#">
-              <div class="navItem c1" id="navabout">про нас</div></a><a href="services.html">
-              <div class="navItem c1" id="navservices">послуги</div></a><a href="#">
-              <div class="navItem c1" id="navcommand">команда</div></a><a href="#">
-              <div class="navItem c1" id="navpublications">публікації </div></a><a href="#">
-              <div class="navItem c1" id="navcontacts">контакти</div></a></nav>
+          <nav class="navigation c1"> 
+            <div class="item"><a href="#">про нас</a></div>
+            <div class="item" id="navservices"><a href="services.html">послуги</a></div>
+            <div class="item"> <a href="#">команда</a></div>
+            <div class="item"><a href="#">публікації </a></div>
+            <div class="item"><a href="#">контакти</a></div>
+          </nav>
           <div class="burger-menu" onclick="myburger()">
             <div class="icon-sanwich"></div>
-            <div class="dropdown bg1">
-              <div class="item c3" id="burgabout"><a href="">про нас</a></div>
-              <div class="item c3" id="burgservices"> <a href="services.html">послуги</a></div>
-              <div class="item c3" id="burgcommand"> <a href="">команда</a></div>
-              <div class="item c3" id="burgpublications"> <a href="">публікації </a></div>
-              <div class="item c3" id="burgcontacts"> <a href="">контакти</a></div>
-            </div>
+            <div class="dropdown bg1 c3"><a href="">нас</a><a onclick="url('services.html')" id="burgservices">послуги</a><a href="">команда</a><a href="">публікації </a><a href="">контакти</a></div>
           </div>
         </header>
       </div>
