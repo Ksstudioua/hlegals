@@ -554,6 +554,7 @@ line-height (optional) -z
   line-height: 45px;
   font-family: "TT Norms";
   font-weight: 400;
+  color: #fff;
 }
 @media (max-width: 850px) {
   .header .logo-wrap .page-info-wrap {
@@ -596,6 +597,7 @@ line-height (optional) -z
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
+  color: #fff;
 }
 @media (max-width: 600px) {
   .header .lang {
@@ -620,6 +622,7 @@ line-height (optional) -z
   font-weight: 400;
   padding-left: 20px;
   text-align: right;
+  color: #fff;
 }
 @media (max-width: 1000px) {
   .header .adress {
@@ -635,6 +638,7 @@ line-height (optional) -z
   padding-left: 13px;
   cursor: pointer;
   text-align: right;
+  color: #fff;
 }
 @media (max-width: 750px) {
   .header .phone {
@@ -658,6 +662,7 @@ line-height (optional) -z
   padding-right: 10px;
   font-size: 20px;
   line-height: 16px;
+  color: #fff;
 }
 @media (max-width: 600px) {
   .header .phone::before {
@@ -669,6 +674,7 @@ line-height (optional) -z
   padding-left: 10px;
   font-size: 20px;
   line-height: 16px;
+  color: #fff;
 }
 @media (max-width: 600px) {
   .header .phone::after {
@@ -680,6 +686,7 @@ line-height (optional) -z
   cursor: pointer;
   text-decoration: none;
   transition: all 0.5s ease;
+  color: #fff;
 }
 @media (max-width: 600px) {
   .header .icon-box {
@@ -705,6 +712,7 @@ line-height (optional) -z
   justify-content: flex-end;
   flex-direction: row;
   margin-top: 19px;
+  color: #fff;
 }
 @media (max-width: 600px) {
   .header .navigation {
@@ -757,6 +765,11 @@ line-height (optional) -z
     justify-content: flex-end;
   }
 }
+.burger-menu a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 .burger-menu .icon-sanwich {
   width: 18px;
   height: 18px;
@@ -782,6 +795,8 @@ line-height (optional) -z
   border-right: 1px solid #000;
   display: none;
   z-index: 50;
+  background-color: #fff;
+  color: #24a3ff;
 }
 .burger-menu .dropdown .item {
   display: block;

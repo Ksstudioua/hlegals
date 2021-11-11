@@ -540,13 +540,13 @@ line-height (optional) -z
   }
 }
 .header .logo-wrap .logo #logo_fills .fil0 {
-  fill: #f78888;
+  fill: #46466E;
 }
 .header .logo-wrap .logo #logo_fills .fil1 {
-  fill: #f0145a;
+  fill: #F0145A;
 }
 .header .logo-wrap .logo #logo_fills .fil2 {
-  fill: white;
+  fill: #323264;
 }
 .header .logo-wrap .page-info-wrap {
   display: none;
@@ -554,7 +554,7 @@ line-height (optional) -z
   line-height: 45px;
   font-family: "TT Norms";
   font-weight: 400;
-  color: #fff;
+  color: #323264;
 }
 @media (max-width: 850px) {
   .header .logo-wrap .page-info-wrap {
@@ -597,7 +597,7 @@ line-height (optional) -z
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  color: #fff;
+  color: #B3B3BA;
 }
 @media (max-width: 600px) {
   .header .lang {
@@ -610,9 +610,11 @@ line-height (optional) -z
   text-transform: uppercase;
   border-radius: 8px;
   cursor: pointer;
+  color: #B3B3BA;
 }
 .header .lang .active {
   background-color: #f0145a;
+  color: #fff;
 }
 .header .adress {
   grid-area: adress;
@@ -622,7 +624,7 @@ line-height (optional) -z
   font-weight: 400;
   padding-left: 20px;
   text-align: right;
-  color: #fff;
+  color: #B3B3BA;
 }
 @media (max-width: 1000px) {
   .header .adress {
@@ -638,7 +640,7 @@ line-height (optional) -z
   padding-left: 13px;
   cursor: pointer;
   text-align: right;
-  color: #fff;
+  color: #B3B3BA;
 }
 @media (max-width: 750px) {
   .header .phone {
@@ -662,7 +664,7 @@ line-height (optional) -z
   padding-right: 10px;
   font-size: 20px;
   line-height: 16px;
-  color: #fff;
+  color: #B3B3BA;
 }
 @media (max-width: 600px) {
   .header .phone::before {
@@ -674,7 +676,7 @@ line-height (optional) -z
   padding-left: 10px;
   font-size: 20px;
   line-height: 16px;
-  color: #fff;
+  color: #B3B3BA;
 }
 @media (max-width: 600px) {
   .header .phone::after {
@@ -686,7 +688,7 @@ line-height (optional) -z
   cursor: pointer;
   text-decoration: none;
   transition: all 0.5s ease;
-  color: #fff;
+  color: #B3B3BA;
 }
 @media (max-width: 600px) {
   .header .icon-box {
@@ -704,6 +706,7 @@ line-height (optional) -z
   font-size: 24px;
   line-height: 24px;
   padding-left: 10px;
+  color: #B3B3BA;
 }
 .header .navigation {
   grid-area: navigate;
@@ -712,7 +715,6 @@ line-height (optional) -z
   justify-content: flex-end;
   flex-direction: row;
   margin-top: 19px;
-  color: #fff;
 }
 @media (max-width: 600px) {
   .header .navigation {
@@ -734,6 +736,7 @@ line-height (optional) -z
   border-bottom-color: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
+  color: #24A3FF;
 }
 @media (max-width: 750px) {
   .header .navigation .item {
@@ -777,7 +780,7 @@ line-height (optional) -z
   transition: all 0.3s ease;
 }
 .burger-menu .icon-sanwich:hover {
-  color: #fff;
+  color: #143646;
   transform: scale(1.1);
   transition: all 0.3s ease;
 }
@@ -795,261 +798,96 @@ line-height (optional) -z
   border-right: 1px solid #000;
   display: none;
   z-index: 50;
-  background-color: #fff;
-  color: #24a3ff;
+  background-color: #323264;
 }
 .burger-menu .dropdown .item {
   display: block;
   padding: 5px 20px;
   border-top-color: transparent;
-  border-bottom: 2px solid #f5f5fa;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
   cursor: pointer;
-  color: #24a3ff;
+  color: #fff;
+  background-color: transparent;
 }
 .burger-menu .dropdown .item a {
   width: 100%;
   height: 100%;
   display: block;
+  background-color: transparent;
 }
 .burger-menu .dropdown .item:hover {
   color: #f0145a;
 }
 
-.assets-title-wrap .h3-caps {
-  opacity: 0.5;
-  cursor: pointer;
-}
-.assets-title-wrap .hero {
-  margin-top: 3px;
-}
-@media (max-width: 600px) {
-  .assets-title-wrap .hero {
-    font-size: 32px;
-    line-height: 38px;
-    font-family: "TT Norms";
-    font-weight: 700;
-  }
-}
-
-.asset-section .asset {
+form.writeUs {
+  border-radius: 12px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 530px;
+  margin: 10px;
+}
+form.writeUs .title {
+  display: inline-block;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
   justify-content: space-between;
-  padding-bottom: 80px;
 }
-.asset-section .asset .aside {
-  margin-top: 48px;
-  padding: 10px 20px;
-  padding-left: 0;
-  width: calc(100% / 3);
+form.writeUs .title a {
+  font-size: 18px;
+  line-height: 18px;
 }
-@media (max-width: 900px) {
-  .asset-section .asset .aside {
-    width: 50%;
-  }
+form.writeUs .title a:hover {
+  background-color: #a0a0a0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-@media (max-width: 900px) and (max-width: 600px) {
-  .asset-section .asset .aside {
-    padding: 0 10px;
-  }
-}
-@media (max-width: 600px) {
-  .asset-section .asset .aside {
-    width: 100%;
-  }
-}
-.asset-section .asset .aside .it-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-@media (max-width: 600px) {
-  .asset-section .asset .aside .it-wrap {
-    flex-direction: row;
-    align-items: center;
-  }
-}
-.asset-section .asset .aside .icon {
-  width: 92px;
-  height: 92px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-style: solid;
-  border-radius: 24px;
-  font-size: 50px;
-}
-@media (max-width: 600px) {
-  .asset-section .asset .aside .icon {
-    display: inline-flex;
-    width: 64px;
-    height: 64px;
-    font-size: 35px;
-    line-height: 35px;
-  }
-}
-.asset-section .asset .aside .title {
-  padding-top: 20px;
-}
-@media (max-width: 600px) {
-  .asset-section .asset .aside .title {
-    display: inline-block;
-    max-width: calc(100% - 74px);
-    padding-top: 0px;
-    padding-left: 10px;
-    font-size: 18px;
-    line-height: 21px;
-    margin-block-start: 0;
-  }
-}
-.asset-section .asset .aside .txt {
-  padding-top: 15px;
-}
-@media (max-width: 600px) {
-  .asset-section .asset .aside .txt {
-    font-size: 18px;
-    line-height: 21px;
-    font-family: "TT Norms";
-    font-weight: 400;
-  }
-}
-
-.case-block {
-  margin-top: 40px;
-  display: grid;
-  -ms-grid-column-align: center;
-  -ms-grid-row-align: center;
-  box-sizing: border-box;
-  grid-template-columns: 0.305fr 0.1fr 0.325fr 0.1fr 0.42fr;
-  grid-template-rows: 0.057fr 0.198fr 0.198fr;
-  grid-gap: 2px;
-  grid-template-areas: "blok1 blok1 blok2 blok2 blok3" "blok4 blok4 blok2 blok2 blok3" "blok5 blok6 blok6 blok7 blok7";
-}
-@media (max-width: 1065px) {
-  .case-block {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 57px 1fr 1fr 1fr;
-    grid-template-areas: "blok1 blok1" "blok2 blok3" "blok4 blok5" "blok6 blok7";
-  }
-}
-@media (max-width: 690px) {
-  .case-block {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.25fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "blok1" "blok2" "blok3" "blok4" "blok5" "blok6" "blok7";
-  }
-}
-.case-block div {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  flex-direction: column;
-  padding: 10px;
-  background-color: #f5f5fa;
-}
-.case-block div .paragraph {
-  cursor: pointer;
-}
-.case-block #d1d {
-  grid-area: blok1;
-  align-self: flex-start;
-  border-top-left-radius: 12px;
-}
-.case-block #d2d {
-  grid-area: blok2;
-}
-.case-block #d3d {
-  grid-area: blok3;
-  border-top-right-radius: 12px;
-}
-.case-block #d4d {
-  grid-area: blok4;
-}
-.case-block #d5d {
-  grid-area: blok5;
-  border-bottom-left-radius: 12px;
-}
-.case-block #d6d {
-  grid-area: blok6;
-}
-.case-block #d7d {
-  grid-area: blok7;
-  border-bottom-right-radius: 12px;
-}
-
-.clients {
-  padding-top: 15px;
-}
-.clients h3 {
-  text-align: center;
-  padding: 15px;
-}
-.clients-wrap {
+form.writeUs input,
+form.writeUs textarea {
+  width: calc(100% - 40px);
   margin: 0 auto;
-  margin-top: 15px;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  padding: 10px;
+  border-radius: 8px;
+  border-color: transparent;
+  margin-bottom: 20px;
+  font-family: TT Norms;
+  font-size: 18px;
+  line-height: 26px;
+  outline: 0;
+  color: #686887;
 }
-.clients-wrap .item {
-  width: 25%;
-  height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+form.writeUs input::placeholder,
+form.writeUs textarea::placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "TT Norms";
+  font-weight: 400;
+  color: #b3b3ba;
 }
-@media (max-width: 1000px) {
-  .clients-wrap .item {
-    width: calc(100% / 3);
-  }
+form.writeUs input:hover, form.writeUs input:focus,
+form.writeUs textarea:hover,
+form.writeUs textarea:focus {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 2px 0px #b3b3ba;
 }
-@media (max-width: 500px) {
-  .clients-wrap .item {
-    width: 50%;
-  }
-  .clients-wrap .item:nth-child(1) {
-    order: 1;
-  }
-  .clients-wrap .item:nth-child(2) {
-    order: 2;
-  }
-  .clients-wrap .item:nth-child(3) {
-    order: 3;
-  }
-  .clients-wrap .item:nth-child(4) {
-    order: 4;
-  }
-  .clients-wrap .item:nth-child(5) {
-    order: 7;
-  }
-  .clients-wrap .item:nth-child(6) {
-    order: 12;
-  }
-  .clients-wrap .item:nth-child(7) {
-    order: 6;
-  }
-  .clients-wrap .item:nth-child(8) {
-    order: 5;
-  }
-  .clients-wrap .item:nth-child(9) {
-    order: 8;
-  }
-  .clients-wrap .item:nth-child(10) {
-    order: 11;
-  }
-  .clients-wrap .item:nth-child(11) {
-    order: 10;
-  }
-  .clients-wrap .item:nth-child(12) {
-    order: 9;
-  }
+form.writeUs #writeUsMessage {
+  height: 180px;
+  resize: none;
 }
-.clients-wrap .item img {
-  max-width: 80%;
-  max-height: 80%;
+form.writeUs .question {
+  padding-left: 30px;
+}
+form.writeUs #writeUsPhone {
+  margin-top: 10px;
+}
+form.writeUs #writeUsSubmit {
+  width: 250px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: "TT Norms";
+  font-weight: 500;
 }
 
 .footer-wrap {
@@ -1184,35 +1022,118 @@ line-height (optional) -z
   }
 }
 
-.title-block-assets {
-  padding-top: 80px;
+.main-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-@media (max-width: 500px) {
-  .title-block-assets {
-    padding-top: 20px;
+@media (max-width: 600px) {
+  .main-wrap {
+    flex-direction: column;
   }
 }
-@media (max-width: 500px) {
-  .title-block-assets .hero {
-    font-size: 32px;
-    line-height: 38px;
+
+.main-contacts {
+  font-size: 21px;
+  line-height: 30px;
+  font-family: "TT Norms";
+  font-weight: 400;
+  color: #323264;
+  width: 412px;
+}
+@media (max-width: 600px) {
+  .main-contacts {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+.main-contacts hr {
+  margin: 0;
+  border: 2px solid #e6e6f0;
+}
+.main-contacts .hrAdress {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.main-contacts .hrEmail {
+  margin-top: 40px;
+}
+.main-contacts p.phone {
+  padding-bottom: 20px;
+}
+.main-contacts .icon-facebook {
+  display: flex;
+  align-items: center;
+  font-size: 38px;
+  padding-top: 20px;
+}
+.main-contacts a.link {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "TT Norms";
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+
+@media (max-width: 600px) {
+  .main-form {
+    padding-top: 40px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  form.writeUs {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  #mainFormTitle {
+    font-size: 22px;
+    line-height: 26px;
     font-family: "TT Norms";
     font-weight: 700;
   }
 }
 
-.bc1 {
-  border-color: #fff;
+form a {
+  display: none;
 }
 
-.bc3 {
-  border-color: #24a3ff;
+main {
+  padding-top: 85px;
+}
+@media (max-width: 600px) {
+  main {
+    padding-top: 20px;
+  }
 }
 
-#navservices {
-  border-bottom-color: #fff;
+iframe.map {
+  padding-top: 70px;
+}
+@media (max-width: 600px) {
+  iframe.map {
+    padding-top: 40px;
+  }
 }
 
-.burger-menu .dropdown #burgservices {
+#navcontacts {
+  border-bottom-color: #f0145a;
+  color: #f0145a;
+}
+
+.burger-menu .dropdown #burgcontacts {
   color: #f0145a;
 }
