@@ -815,6 +815,110 @@ line-height (optional) -z
   color: #f0145a;
 }
 
+form.writeUs {
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  max-width: 530px;
+  margin: 10px;
+}
+form.writeUs .title {
+  display: inline-block;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+form.writeUs .title a {
+  font-size: 18px;
+  line-height: 18px;
+  padding-left: 20px;
+}
+form.writeUs .title a:hover {
+  background-color: #a0a0a0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+form.writeUs #writeUsName,
+form.writeUs #writeUsMessage,
+form.writeUs #writeUsPhone,
+form.writeUs #writeUsEmail {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 8px;
+  border-color: transparent;
+  margin-bottom: 20px;
+  font-family: TT Norms;
+  font-size: 18px;
+  line-height: 26px;
+  outline: 0;
+  color: #686887;
+}
+form.writeUs #writeUsName::placeholder,
+form.writeUs #writeUsMessage::placeholder,
+form.writeUs #writeUsPhone::placeholder,
+form.writeUs #writeUsEmail::placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "TT Norms";
+  font-weight: 400;
+  color: #b3b3ba;
+}
+form.writeUs #writeUsName:hover, form.writeUs #writeUsName:focus,
+form.writeUs #writeUsMessage:hover,
+form.writeUs #writeUsMessage:focus,
+form.writeUs #writeUsPhone:hover,
+form.writeUs #writeUsPhone:focus,
+form.writeUs #writeUsEmail:hover,
+form.writeUs #writeUsEmail:focus {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 2px 0px #b3b3ba;
+}
+
+#writeUsMessage {
+  height: 180px;
+  resize: none;
+}
+
+.question {
+  padding-left: 30px;
+}
+
+#writeUsPhone {
+  margin-top: 10px;
+}
+
+#writeUsSubmit {
+  margin: 0 auto;
+  width: 250px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: "TT Norms";
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 8px;
+  border-color: transparent;
+  margin-bottom: 20px;
+  font-family: TT Norms;
+  font-size: 18px;
+  line-height: 26px;
+  outline: 0;
+}
+#writeUsSubmit::placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "TT Norms";
+  font-weight: 400;
+  color: #b3b3ba;
+}
+#writeUsSubmit:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 2px 0px #b3b3ba;
+}
+
 .case-block {
   margin-top: 40px;
   display: grid;
@@ -1177,7 +1281,52 @@ line-height (optional) -z
   }
 }
 
+.keyboard {
+  background: url("../assets/images/bgKeyboard.png"), linear-gradient(200deg, #323264 40%, #323264 90%, #643e72 98%);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.modify-width {
+  max-width: 1100px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+main > .icon {
+  width: 92px;
+  height: 92px;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+}
+main .h3 {
+  width: 100%;
+  padding-top: 20px;
+  text-align: left;
+}
+@media (max-width: 800px) {
+  main .h3 {
+    padding-left: 20px;
+  }
+}
+
+.bg-wrap {
+  margin-top: 40px;
+}
+
 .title-block-publication {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 40px;
 }
 @media (max-width: 500px) {
@@ -1186,6 +1335,17 @@ line-height (optional) -z
     line-height: 38px;
     font-family: "TT Norms";
     font-weight: 700;
+  }
+}
+.title-block-publication .introduction {
+  padding-top: 20px;
+  text-align: center;
+  max-width: 860px;
+  padding-bottom: 40px;
+}
+@media (max-width: 450px) {
+  .title-block-publication .introduction {
+    padding-bottom: 20px;
   }
 }
 
@@ -1197,8 +1357,106 @@ line-height (optional) -z
   border-color: #24a3ff;
 }
 
-.index-hr {
-  height: 4px;
-  border-color: transparent;
-  background-color: #c4c4c4;
+#navservices {
+  border-bottom-color: #f0145a;
+  color: #f0145a;
+}
+
+.burger-menu .dropdown #burgservices {
+  color: #f0145a;
+}
+
+.askUz {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  width: 250px;
+  height: 50px;
+}
+@media (max-width: 450px) {
+  .askUz {
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
+}
+
+.left {
+  align-items: flex-start;
+}
+
+.string-hr {
+  margin: 0;
+  margin-top: 80px;
+  border: 2px solid #fff;
+  width: 100%;
+  opacity: 0.5;
+}
+@media (max-width: 450px) {
+  .string-hr {
+    margin-top: 30px;
+  }
+}
+
+.service-list-contain {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 80px;
+}
+@media (max-width: 800px) {
+  .service-list-contain {
+    flex-direction: column;
+  }
+}
+.service-list-contain .service-list {
+  max-width: 500px;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+@media (max-width: 800px) {
+  .service-list-contain .service-list {
+    max-width: 100%;
+    padding-left: 20px;
+  }
+}
+.service-list-contain .service-list .item {
+  padding: 10px 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "TT Norms";
+  font-weight: 400;
+  list-style-type: disc;
+  list-style-position: outside;
+}
+.service-list-contain .service-list .item::marker {
+  color: #f0145a;
+}
+
+.popup {
+  width: 100vw;
+  height: 100vh;
+  background: #323264e8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.popup form.writeUs {
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  max-width: 530px;
+  margin: 10px;
+}
+@media (max-width: 500px) {
+  .popup form.writeUs {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }

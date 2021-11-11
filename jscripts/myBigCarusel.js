@@ -13,7 +13,7 @@ let direction = 0
 window.addEventListener('resize', stable)
 window.addEventListener('load', myBigCarusel)
 
-setInterval(autoPlay, 30000)
+setInterval(autoPlay, 10000)
 //----------------------------------------------
 
 function autoPlay() {
