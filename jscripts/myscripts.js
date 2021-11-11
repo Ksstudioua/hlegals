@@ -40,24 +40,24 @@ function mylang(myvar) {
 
   if (myvar == 'ua') {
     for (let f = 0; f < ua.length; f++) {
-      parentNav.children[f].innerText = ua[f]
-      dropmenu.children[f].innerText = ua[f]
+      parentNav.children[f].lastChild.innerText = ua[f]
+      dropmenu.children[f].lastChild.innerText = ua[f]
     }
     parent.children[0].classList.add('active')
   }
 
   if (myvar == 'ru') {
     for (let f = 0; f < ru.length; f++) {
-      parentNav.children[f].innerText = ru[f]
-      dropmenu.children[f].innerText = ru[f]
+      parentNav.children[f].lastChild.innerText = ru[f]
+      dropmenu.children[f].lastChild.innerText = ru[f]
     }
     parent.children[1].classList.add('active')
   }
 
   if (myvar == 'en') {
     for (let f = 0; f < en.length; f++) {
-      parentNav.children[f].innerText = en[f]
-      dropmenu.children[f].innerText = en[f]
+      parentNav.children[f].lastChild.innerText = en[f]
+      dropmenu.children[f].lastChild.innerText = en[f]
     }
     parent.children[2].classList.add('active')
   }
