@@ -1359,7 +1359,8 @@ main .h3 {
 .askUz {
   margin-top: 40px;
   margin-bottom: 80px;
-  cursor: pointer;
+  width: 250px;
+  height: 50px;
 }
 
 .string-hr {
