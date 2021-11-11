@@ -1410,3 +1410,16 @@ main .h3 {
   align-items: center;
   display: none;
 }
+.popup form.writeUs {
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  max-width: 530px;
+  margin: 10px;
+}
+@media (max-width: 500px) {
+  .popup form.writeUs {
+    width: 100%;
+    height: 100%;
+  }
+}
