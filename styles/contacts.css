@@ -835,6 +835,7 @@ form.writeUs .title {
 form.writeUs .title a {
   font-size: 18px;
   line-height: 18px;
+  padding-left: 20px;
 }
 form.writeUs .title a:hover {
   background-color: #a0a0a0;
@@ -842,8 +843,10 @@ form.writeUs .title a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-form.writeUs input,
-form.writeUs textarea {
+form.writeUs #writeUsName,
+form.writeUs #writeUsMessage,
+form.writeUs #writeUsPhone,
+form.writeUs #writeUsEmail {
   width: calc(100% - 40px);
   margin: 0 auto;
   padding: 10px;
@@ -856,37 +859,67 @@ form.writeUs textarea {
   outline: 0;
   color: #686887;
 }
-form.writeUs input::placeholder,
-form.writeUs textarea::placeholder {
+form.writeUs #writeUsName::placeholder,
+form.writeUs #writeUsMessage::placeholder,
+form.writeUs #writeUsPhone::placeholder,
+form.writeUs #writeUsEmail::placeholder {
   font-size: 18px;
   line-height: 26px;
   font-family: "TT Norms";
   font-weight: 400;
   color: #b3b3ba;
 }
-form.writeUs input:hover, form.writeUs input:focus,
-form.writeUs textarea:hover,
-form.writeUs textarea:focus {
+form.writeUs #writeUsName:hover, form.writeUs #writeUsName:focus,
+form.writeUs #writeUsMessage:hover,
+form.writeUs #writeUsMessage:focus,
+form.writeUs #writeUsPhone:hover,
+form.writeUs #writeUsPhone:focus,
+form.writeUs #writeUsEmail:hover,
+form.writeUs #writeUsEmail:focus {
   transform: scale(1.02);
   box-shadow: 0px 0px 2px 0px #b3b3ba;
 }
-form.writeUs #writeUsMessage {
+
+#writeUsMessage {
   height: 180px;
   resize: none;
 }
-form.writeUs .question {
+
+.question {
   padding-left: 30px;
 }
-form.writeUs #writeUsPhone {
+
+#writeUsPhone {
   margin-top: 10px;
 }
-form.writeUs #writeUsSubmit {
+
+#writeUsSubmit {
+  margin: 0 auto;
   width: 250px;
   color: #fff;
   font-size: 14px;
   line-height: 17px;
   font-family: "TT Norms";
   font-weight: 500;
+  padding: 10px;
+  border-radius: 8px;
+  border-color: transparent;
+  margin-bottom: 20px;
+  font-family: TT Norms;
+  font-size: 18px;
+  line-height: 26px;
+  outline: 0;
+}
+#writeUsSubmit::placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "TT Norms";
+  font-weight: 400;
+  color: #b3b3ba;
+}
+#writeUsSubmit:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 2px 0px #b3b3ba;
 }
 
 .footer-wrap {
@@ -1106,7 +1139,7 @@ form.writeUs #writeUsSubmit {
   }
 }
 
-form a {
+#formCross {
   display: none;
 }
 

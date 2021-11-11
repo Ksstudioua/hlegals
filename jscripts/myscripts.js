@@ -15,6 +15,16 @@ function myburger() {
   }
 }
 
+//+++++++++++++++++++++++++++++++++++++++++
+//++++++++ form open & close btn+++++++++++
+//+++++++++++++++++++++++++++++++++++++++++
+function popupOpen() {
+  document.querySelector('.popup').style.display = 'flex'
+}
+
+function popupClose() {
+  document.querySelector('.popup').style.display = 'none'
+}
 
 //+++++++++++++++++++++++++++++++++++++++++
 //+++++++++ LANGUAGE VAR LIST +++++++++++++
@@ -23,14 +33,12 @@ let ua = ['про нас', 'послуги', 'команда', 'публікац
 let ru = ['о нас', 'услуги', 'команда', 'публикации', 'контакты']
 let en = ['about us', 'services', 'team', 'publications', 'contacts']
 
-
 //+++++++++++++++++++++++++++++++++++++++++
 //+++ DECLARING VARIABLES FOR BLOCKS ++++++
 //+++++++++++++++++++++++++++++++++++++++++
 let parent = document.querySelector('.lang')
 let dropmenu = document.querySelector('.dropdown')
 let parentNav = document.querySelector('.navigation')
-
 
 //+++++++++++++++++++++++++++++++++++++++++
 //++++++++++ LANG RE-SET FUNCTION +++++++++
@@ -63,7 +71,6 @@ function mylang(myvar) {
   }
 }
 
-
 //+++++++++++++++++++++++++++++++++++++++++
 //++++++ LANG MENU CLEAR CLASS ACTIVE +++++
 //+++++++++++++++++++++++++++++++++++++++++
@@ -73,7 +80,6 @@ function clearLangMenuActive() {
       parent.children[clear].classList.remove('active')
   }
 }
-
 
 //+++++++++++++++++++++++++++++++++++++++++
 //++++++++ SET PAGE TITLE FUNCTION ++++++++

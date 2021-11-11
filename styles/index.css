@@ -1077,13 +1077,14 @@ line-height (optional) -z
   padding: 10px 20px;
   padding-left: 0;
   width: calc(100% / 3);
+  cursor: pointer;
 }
 @media (max-width: 900px) {
   .asset-section .asset .aside {
     width: 50%;
   }
 }
-@media (max-width: 900px) and (max-width: 600px) {
+@media (max-width: 600px) {
   .asset-section .asset .aside {
     padding: 0 10px;
   }
@@ -1092,6 +1093,9 @@ line-height (optional) -z
   .asset-section .asset .aside {
     width: 100%;
   }
+}
+.asset-section .asset .aside:hover {
+  transform: scale(1.05);
 }
 .asset-section .asset .aside .it-wrap {
   display: flex;
