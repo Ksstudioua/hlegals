@@ -57,15 +57,13 @@ function frameSdvig(frameNumber) {
 function frameSize() {
   width = myBigCaruselWrap.offsetWidth
   height = myBigCaruselWrap.offsetHeight
-  let sizes = document.createElement('style')
 
-  sizes.innerHTML = `
+  document.querySelector('.myBigCaruselStyle').innerHTML = `
 .myBigCaruselFrameItem{width:${width}px; height:${height}px;}
 .myBigCaruselFrameLine{height:${height}px; width: ${
     width * (haveFrames + 2)
   }px;}
 `
-  document.body.append(sizes)
 }
 
 function selectorclear() {
@@ -81,7 +79,7 @@ function myBigCarusel() {
   //++++++++++++++++++++++++++++++++++++++++++
   //++++++++++ CARUSEL BIG ONLOAD ++++++++++++++
   //++++++++++++++++++++++++++++++++++++++++++
-
+  
   for (let createSel = 0; createSel < haveFrames; createSel++) {
     let addNewSelector = document.createElement('div')
     addNewSelector.classList.add('myBigCaruselSelector')
@@ -89,5 +87,10 @@ function myBigCarusel() {
     myBigCaruselSelectors.append(addNewSelector)
   }
   myBigCaruselSelectors.children[0].classList.add('myBigCaruselActive')
+
+  let addNewStyle = document.createElement('style')
+  addNewStyle.classList.add('myBigCaruselStyle')
+  addNewStyle.innerHTML=`<!-- javascript style create here -->`
+  document.body.prepend(addNewStyle)
   frameSize()
 }
