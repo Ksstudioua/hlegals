@@ -1194,10 +1194,10 @@ line-height (optional) -z
   padding-left: 40px;
   padding-top: 25px;
 }
-@media (max-width: 600px) {
+@media (max-width: 950px) {
   .myBigCaruselTextBox {
-    padding-top: 17px;
-    padding-left: 10px;
+    padding-top: 25px;
+    padding-left: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
