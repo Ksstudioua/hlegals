@@ -799,6 +799,7 @@ line-height (optional) -z
   display: none;
   z-index: 50;
   background-color: #323264;
+  color: #fff;
 }
 .burger-menu .dropdown .item {
   display: block;
@@ -807,7 +808,6 @@ line-height (optional) -z
   border-bottom: 2px solid rgba(255, 255, 255, 0.25);
   cursor: pointer;
   color: #fff;
-  background-color: transparent;
 }
 .burger-menu .dropdown .item a {
   width: 100%;
