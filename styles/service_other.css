@@ -498,6 +498,42 @@ line-height (optional) -z
   opacity: 0.5;
 }
 
+.link-with-arrow:hover {
+  transition: all 0.5s ease;
+  color: #f48b30;
+  font-weight: 700;
+}
+.link-with-arrow:hover .arrow {
+  transition: all 0.5s ease-in;
+  transform: translateX(30px) rotate(-45deg) translateY(-2.5px) scale(3);
+  border-color: #f0145a;
+  animation-name: arrowBtn;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes arrowBtn {
+  0% {
+    transform: translateX(0px) rotate(-45deg) translateY(-2.5px) scale(1);
+    border-color: #f0145a;
+    opacity: 0;
+  }
+  15% {
+    transform: rotate(-45deg) translateY(-2.5px);
+    border-color: #f0145a;
+    opacity: 1;
+  }
+  30% {
+    transform: rotate(-45deg) translateY(-2.5px);
+    border-color: #f0145a;
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(50px) rotate(-45deg) translateY(-2.5px) scale(2);
+    border-color: #f0145a;
+    opacity: 0;
+  }
+}
 .header {
   display: grid;
   grid-template-columns: auto max-content max-content max-content max-content;

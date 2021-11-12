@@ -498,6 +498,42 @@ line-height (optional) -z
   opacity: 0.5;
 }
 
+.link-with-arrow:hover {
+  transition: all 0.5s ease;
+  color: #f48b30;
+  font-weight: 700;
+}
+.link-with-arrow:hover .arrow {
+  transition: all 0.5s ease-in;
+  transform: translateX(30px) rotate(-45deg) translateY(-2.5px) scale(3);
+  border-color: #f0145a;
+  animation-name: arrowBtn;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes arrowBtn {
+  0% {
+    transform: translateX(0px) rotate(-45deg) translateY(-2.5px) scale(1);
+    border-color: #f0145a;
+    opacity: 0;
+  }
+  15% {
+    transform: rotate(-45deg) translateY(-2.5px);
+    border-color: #f0145a;
+    opacity: 1;
+  }
+  30% {
+    transform: rotate(-45deg) translateY(-2.5px);
+    border-color: #f0145a;
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(50px) rotate(-45deg) translateY(-2.5px) scale(2);
+    border-color: #f0145a;
+    opacity: 0;
+  }
+}
 .header {
   display: grid;
   grid-template-columns: auto max-content max-content max-content max-content;
@@ -889,6 +925,35 @@ line-height (optional) -z
   opacity: 0.5;
 }
 
+.img2 {
+  z-index: 10;
+  animation-name: animP;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animP {
+  0% {
+    -webkit-filter: blur(0px);
+    opacity: 1;
+  }
+  50% {
+    -webkit-filter: blur(0px);
+    opacity: 1;
+  }
+  70% {
+    -webkit-filter: blur(50px);
+    opacity: 0.9;
+  }
+  80% {
+    -webkit-filter: blur(50px);
+    opacity: 0.9;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    opacity: 1;
+  }
+}
 .carusel1 {
   padding: 80px 0;
 }
@@ -1074,10 +1139,11 @@ line-height (optional) -z
 }
 .asset-section .asset .aside {
   margin-top: 48px;
-  padding: 10px 20px;
+  padding: 15px;
   padding-left: 0;
-  width: calc(100% / 3);
+  width: calc(100% / 3.1);
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 @media (max-width: 900px) {
   .asset-section .asset .aside {
@@ -1095,7 +1161,33 @@ line-height (optional) -z
   }
 }
 .asset-section .asset .aside:hover {
-  transform: scale(1.05);
+  background-color: #1c4280;
+  border-radius: 25px;
+  transition: all 0.6s ease;
+  box-shadow: 0px 0px 10px 3px #fff;
+  transform: scale(0.95);
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .asset-section .asset .aside:hover {
+    padding: 10px 0px;
+  }
+}
+.asset-section .asset .aside:hover .title {
+  font-weight: 700;
+  color: #f0145a;
+  margin-left: 15px;
+  transition: all 0.5s ease;
+}
+.asset-section .asset .aside:hover .icon {
+  margin-left: 15px;
+  background-color: transparent;
+  box-shadow: 0 0 0px 3px #fff;
+  transition: all 0.5s ease;
+}
+.asset-section .asset .aside:hover .txt {
+  margin-left: 15px;
+  transition: all 0.5s ease;
 }
 .asset-section .asset .aside .it-wrap {
   display: flex;
@@ -1117,6 +1209,7 @@ line-height (optional) -z
   border-style: solid;
   border-radius: 24px;
   font-size: 50px;
+  transition: all 0.5s ease;
 }
 @media (max-width: 600px) {
   .asset-section .asset .aside .icon {
@@ -1129,6 +1222,7 @@ line-height (optional) -z
 }
 .asset-section .asset .aside .title {
   padding-top: 20px;
+  transition: all 0.5s ease;
 }
 @media (max-width: 600px) {
   .asset-section .asset .aside .title {
@@ -1143,6 +1237,7 @@ line-height (optional) -z
 }
 .asset-section .asset .aside .txt {
   padding-top: 15px;
+  transition: all 0.5s ease;
 }
 @media (max-width: 600px) {
   .asset-section .asset .aside .txt {

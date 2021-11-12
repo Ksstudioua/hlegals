@@ -77,9 +77,9 @@ function selectorclear() {
 
 function myBigCarusel() {
   //++++++++++++++++++++++++++++++++++++++++++
-  //++++++++++ CARUSEL BIG ONLOAD ++++++++++++++
+  //++++++++++ CARUSEL BIG ONLOAD ++++++++++++
   //++++++++++++++++++++++++++++++++++++++++++
-  
+
   for (let createSel = 0; createSel < haveFrames; createSel++) {
     let addNewSelector = document.createElement('div')
     addNewSelector.classList.add('myBigCaruselSelector')
@@ -90,7 +90,7 @@ function myBigCarusel() {
 
   let addNewStyle = document.createElement('style')
   addNewStyle.classList.add('myBigCaruselStyle')
-  addNewStyle.innerHTML=`<!-- javascript style create here -->`
+  addNewStyle.innerHTML = `<!-- javascript style create here -->`
   document.body.prepend(addNewStyle)
   frameSize()
 }

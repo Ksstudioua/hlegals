@@ -84,14 +84,24 @@ function clearLangMenuActive() {
 //+++++++++++++++++++++++++++++++++++++++++
 //++++++++ SET PAGE TITLE FUNCTION ++++++++
 //+++++++++++++++++++++++++++++++++++++++++
-function titleOn(pageTitle) {
+function titleOn(pageTitle, newlink) {
   if (pageTitle != undefined) {
     let showPageTitle = document.querySelector('.page-info-wrap')
-    let newPageTitle = document.querySelector('.page-info-wrap > h3')
+    let newPageTitle = document.querySelector('.page-info-wrap > a')
     showPageTitle.style = 'display:flex;'
-    newPageTitle.innerText = pageTitle
+    newPageTitle.innerHTML = pageTitle
   } else {
     let showPageTitle = document.querySelector('.page-info-wrap')
     showPageTitle.style = 'display:none;'
   }
+  if (newlink != null) {
+    pageLink(newlink)
+  }
+}
+
+function pageLink(newlink) {
+  let newPageTitleLink = document.querySelector('.page-info-wrap > a')
+  newPageTitleLink.setAttribute('href', `${newlink}`)
+  newPageTitleLink.style.cursor = 'pointer'
+  console.log(newPageTitleLink)
 }
