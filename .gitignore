@@ -1,4 +1,5 @@
 
+<<<<<<< Updated upstream
 *.pug
 *.scss
 *.map
@@ -6,3 +7,25 @@
 .vscode/settings.json
 .vscode/tasks.json
 *.json
+=======
+.vscode/extensions.json
+.vscode/settings.json
+.vscode/tasks.json
+about.pug
+bricks/_block_service.pug
+bricks/_carusel1.pug
+bricks/_cases.pug
+bricks/_footer.pug
+bricks/_form.pug
+bricks/_header.pug
+bricks/_myAdvanceCarusel.pug
+bricks/_myBigCarusel.pug
+bricks/_ourClients.pug
+bricks/_performance.pug
+bricks/_publication.pug
+*.pug
+*.scss
+styles/fonts.css.map
+package.json
+package-lock.json
+>>>>>>> Stashed changes
