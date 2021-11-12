@@ -3,14 +3,9 @@
 *.pug
 *.scss
 *.map
-.vscode/extensions.json
-.vscode/settings.json
-.vscode/tasks.json
 *.json
 =======
-.vscode/extensions.json
-.vscode/settings.json
-.vscode/tasks.json
+.vscode/
 about.pug
 bricks/_block_service.pug
 bricks/_carusel1.pug
@@ -23,9 +18,12 @@ bricks/_myBigCarusel.pug
 bricks/_ourClients.pug
 bricks/_performance.pug
 bricks/_publication.pug
+node_modules/
 *.pug
 *.scss
 styles/fonts.css.map
 package.json
 package-lock.json
 >>>>>>> Stashed changes
+gruntfile.js
+*.cmd
