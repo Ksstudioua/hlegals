@@ -121,7 +121,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -308,7 +308,15 @@ a {
 }
 
 .gradient-wrap {
-  background: linear-gradient(70deg, #643e72 6%, #323264 29%, #323264 44%, #323264 57%, #323264 75%, #7a425e 94%);
+  background: linear-gradient(
+    70deg,
+    #643e72 6%,
+    #323264 29%,
+    #323264 44%,
+    #323264 57%,
+    #323264 75%,
+    #7a425e 94%
+  );
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }
@@ -336,45 +344,45 @@ line-height (optional) -z
 .hero {
   font-size: 42px;
   line-height: 50px;
-  font-family: "TT Norms";
+  font-family: 'TT Norms';
   font-weight: 400;
 }
 .hero-mobile {
   font-size: 32px;
   line-height: 38px;
-  font-family: "TT Norms";
+  font-family: 'TT Norms';
   font-weight: 400;
 }
 
 .h2 {
   font-size: 32px;
   line-height: 38px;
-  font-family: "TT Norms";
+  font-family: 'TT Norms';
   font-weight: 400;
 }
 .h2-mobile {
   font-size: 22px;
   line-height: 26px;
-  font-family: "TT Norms";
+  font-family: 'TT Norms';
   font-weight: 400;
 }
 
 .h3 {
   font-size: 24px;
   line-height: 28px;
-  font-family: "TT Norms";
+  font-family: 'TT Norms';
   font-weight: 400;
 }
 .h3-mobile {
   font-size: 18px;
   line-height: 21px;
-  font-family: "TT Norms";
+  font-family: 'TT Norms';
   font-weight: 400;
 }
 .h3-caps {
   font-size: 14px;
   line-height: 17px;
-  font-family: "TT Norms";
+  font-family: 'TT Norms';
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -383,27 +391,27 @@ line-height (optional) -z
 .h4 {
   font-size: 18px;
   line-height: 21px;
-  font-family: "TT Norms";
+  font-family: 'TT Norms';
   font-weight: 400;
 }
 
 .paragraph {
   font-size: 18px;
   line-height: 26px;
-  font-family: "TT Norms";
+  font-family: 'TT Norms';
   font-weight: 400;
 }
 .paragraph-min {
   font-size: 16px;
   line-height: 22px;
-  font-family: "TT Norms";
+  font-family: 'TT Norms';
   font-weight: 400;
 }
 
 .introduction {
   font-size: 21px;
   line-height: 30px;
-  font-family: "TT Norms";
+  font-family: 'TT Norms';
   font-weight: 400;
   color: #c4c4c4;
 }
@@ -435,7 +443,13 @@ line-height (optional) -z
 }
 
 .rad-gradient {
-  background: radial-gradient(0deg, #fff 0%, #c4c4c4 25%, #24a3ff 50%, #f0145a 75%);
+  background: radial-gradient(
+    0deg,
+    #fff 0%,
+    #c4c4c4 25%,
+    #24a3ff 50%,
+    #f0145a 75%
+  );
 }
 
 .shadow1 {
@@ -538,18 +552,18 @@ line-height (optional) -z
   display: grid;
   grid-template-columns: auto max-content max-content max-content max-content;
   grid-template-rows: auto auto;
-  grid-template-areas: "logo   lang    adress   phone   facebook" "logo navigate navigate navigate navigate";
+  grid-template-areas: 'logo   lang    adress   phone   facebook' 'logo navigate navigate navigate navigate';
   align-items: center;
   padding-top: 56px;
 }
 @media (max-width: 1000px) {
   .header {
-    grid-template-areas: "logo   lang    lang   phone   facebook" "logo navigate navigate navigate navigate";
+    grid-template-areas: 'logo   lang    lang   phone   facebook' 'logo navigate navigate navigate navigate';
   }
 }
 @media (max-width: 600px) {
   .header {
-    grid-template-areas: "lang phone phone " "logo logo burger";
+    grid-template-areas: 'lang phone phone ' 'logo logo burger';
     grid-template-rows: 50px 50px;
     padding-top: 0;
   }
@@ -588,7 +602,7 @@ line-height (optional) -z
   display: none;
   font-size: 38px;
   line-height: 45px;
-  font-family: "TT Norms";
+  font-family: 'TT Norms';
   font-weight: 400;
   color: #323264;
 }
@@ -596,7 +610,7 @@ line-height (optional) -z
   .header .logo-wrap .page-info-wrap {
     font-size: 26px;
     line-height: 28px;
-    font-family: "TT Norms";
+    font-family: 'TT Norms';
     font-weight: 400;
   }
 }
@@ -604,7 +618,7 @@ line-height (optional) -z
   .header .logo-wrap .page-info-wrap {
     font-size: 19px;
     line-height: 22px;
-    font-family: "TT Norms";
+    font-family: 'TT Norms';
     font-weight: 400;
   }
 }
@@ -627,7 +641,7 @@ line-height (optional) -z
   grid-area: lang;
   font-size: 12px;
   line-height: 14px;
-  font-family: "TT Norms";
+  font-family: 'TT Norms';
   font-weight: 700;
   display: flex;
   flex-direction: row;
@@ -656,7 +670,7 @@ line-height (optional) -z
   grid-area: adress;
   font-size: 16px;
   line-height: 19px;
-  font-family: "TT Norms";
+  font-family: 'TT Norms';
   font-weight: 400;
   padding-left: 20px;
   text-align: right;
@@ -671,7 +685,7 @@ line-height (optional) -z
   grid-area: phone;
   font-size: 16px;
   line-height: 19px;
-  font-family: "TT Norms";
+  font-family: 'TT Norms';
   font-weight: 700;
   padding-left: 13px;
   cursor: pointer;
@@ -682,7 +696,7 @@ line-height (optional) -z
   .header .phone {
     font-size: 13px;
     line-height: 15px;
-    font-family: "TT Norms";
+    font-family: 'TT Norms';
     font-weight: 400;
   }
 }
@@ -690,13 +704,13 @@ line-height (optional) -z
   .header .phone {
     font-size: 16px;
     line-height: 19px;
-    font-family: "TT Norms";
+    font-family: 'TT Norms';
     font-weight: 400;
     color: #b3b3ba;
   }
 }
 .header .phone::before {
-  content: "•";
+  content: '•';
   padding-right: 10px;
   font-size: 20px;
   line-height: 16px;
@@ -708,7 +722,7 @@ line-height (optional) -z
   }
 }
 .header .phone::after {
-  content: "•";
+  content: '•';
   padding-left: 10px;
   font-size: 20px;
   line-height: 16px;
@@ -760,7 +774,7 @@ line-height (optional) -z
 .header .navigation .item {
   font-size: 18px;
   line-height: 18px;
-  font-family: "TT Norms";
+  font-family: 'TT Norms';
   font-weight: 400;
   display: flex;
   align-items: flex-end;
@@ -778,7 +792,7 @@ line-height (optional) -z
   .header .navigation .item {
     font-size: 12px;
     line-height: 14px;
-    font-family: "TT Norms";
+    font-family: 'TT Norms';
     font-weight: 400;
   }
 }
@@ -827,7 +841,7 @@ line-height (optional) -z
   right: 0;
   text-align: center;
   border-radius: 8px;
-  font-family: "TT Norms";
+  font-family: 'TT Norms';
   font-weight: 500;
   padding: 10px;
   border-bottom: 1px solid #000;
@@ -901,11 +915,12 @@ form.writeUs #writeUsPhone::placeholder,
 form.writeUs #writeUsEmail::placeholder {
   font-size: 18px;
   line-height: 26px;
-  font-family: "TT Norms";
+  font-family: 'TT Norms';
   font-weight: 400;
   color: #b3b3ba;
 }
-form.writeUs #writeUsName:hover, form.writeUs #writeUsName:focus,
+form.writeUs #writeUsName:hover,
+form.writeUs #writeUsName:focus,
 form.writeUs #writeUsMessage:hover,
 form.writeUs #writeUsMessage:focus,
 form.writeUs #writeUsPhone:hover,
@@ -935,7 +950,7 @@ form.writeUs #writeUsEmail:focus {
   color: #fff;
   font-size: 14px;
   line-height: 17px;
-  font-family: "TT Norms";
+  font-family: 'TT Norms';
   font-weight: 500;
   padding: 10px;
   border-radius: 8px;
@@ -949,7 +964,7 @@ form.writeUs #writeUsEmail:focus {
 #writeUsSubmit::placeholder {
   font-size: 18px;
   line-height: 26px;
-  font-family: "TT Norms";
+  font-family: 'TT Norms';
   font-weight: 400;
   color: #b3b3ba;
 }
@@ -993,7 +1008,7 @@ form.writeUs #writeUsEmail:focus {
   background-color: #f5f5fa;
   box-sizing: unset;
 }
-.myBigCaruselFrameItem [type=image] {
+.myBigCaruselFrameItem [type='image'] {
   width: 300px;
   height: 109px;
   border-radius: 20px;
@@ -1002,7 +1017,7 @@ form.writeUs #writeUsEmail:focus {
   display: block;
 }
 @media (max-width: 630px) {
-  .myBigCaruselFrameItem [type=image] {
+  .myBigCaruselFrameItem [type='image'] {
     width: 200px;
     height: 73px;
     border-radius: 15px;
@@ -1010,7 +1025,7 @@ form.writeUs #writeUsEmail:focus {
   }
 }
 @media (max-width: 450px) {
-  .myBigCaruselFrameItem [type=image] {
+  .myBigCaruselFrameItem [type='image'] {
     width: 157px;
     height: 57px;
     border-radius: 11px;
@@ -1093,13 +1108,13 @@ form.writeUs #writeUsEmail:focus {
 .footer-wrap .adress-block .adress {
   font-size: 16px;
   line-height: 19px;
-  font-family: "TT Norms";
+  font-family: 'TT Norms';
   font-weight: 500;
 }
 .footer-wrap .adress-block .link {
   font-size: 16px;
   line-height: 19px;
-  font-family: "TT Norms";
+  font-family: 'TT Norms';
   font-weight: 700;
 }
 .footer-wrap .phone-block {
@@ -1131,7 +1146,7 @@ form.writeUs #writeUsEmail:focus {
 .footer-wrap .phone-block .phone {
   font-size: 16px;
   line-height: 19px;
-  font-family: "TT Norms";
+  font-family: 'TT Norms';
   font-weight: 500;
 }
 @media (max-width: 450px) {
@@ -1142,7 +1157,7 @@ form.writeUs #writeUsEmail:focus {
 .footer-wrap .phone-block .email {
   font-size: 16px;
   line-height: 19px;
-  font-family: "TT Norms";
+  font-family: 'TT Norms';
   font-weight: 700;
 }
 @media (max-width: 450px) {
@@ -1153,7 +1168,7 @@ form.writeUs #writeUsEmail:focus {
 .footer-wrap .copyright {
   font-size: 16px;
   line-height: 30px;
-  font-family: "TT Norms";
+  font-family: 'TT Norms';
   font-weight: 400;
 }
 @media (max-width: 800px) {
@@ -1170,7 +1185,7 @@ form.writeUs #writeUsEmail:focus {
   }
 }
 .footer-wrap .dot::before {
-  content: "•";
+  content: '•';
   font-size: 30px;
   color: #323264;
   padding: 0 10px;
@@ -1235,7 +1250,7 @@ form.writeUs #writeUsEmail:focus {
 .info-wrapper .block-right .introduction {
   font-size: 18px;
   line-height: 21px;
-  font-family: "TT Norms";
+  font-family: 'TT Norms';
   font-weight: 400;
   padding-top: 10px;
   padding-bottom: 40px;
@@ -1252,7 +1267,7 @@ form.writeUs #writeUsEmail:focus {
   background-size: cover;
   font-size: 96px;
   line-height: 438px;
-  font-family: "TT Norms";
+  font-family: 'TT Norms';
   font-weight: 400;
   color: #fff;
   text-align: center;
@@ -1264,7 +1279,7 @@ form.writeUs #writeUsEmail:focus {
   .team-photo-title {
     font-size: 80px;
     line-height: 290px;
-    font-family: "TT Norms";
+    font-family: 'TT Norms';
     font-weight: 400;
     letter-spacing: 50px;
   }
@@ -1273,7 +1288,7 @@ form.writeUs #writeUsEmail:focus {
   .team-photo-title {
     font-size: 60px;
     line-height: 290px;
-    font-family: "TT Norms";
+    font-family: 'TT Norms';
     font-weight: 400;
     letter-spacing: 30px;
   }
@@ -1282,7 +1297,7 @@ form.writeUs #writeUsEmail:focus {
   .team-photo-title {
     font-size: 45px;
     line-height: 290px;
-    font-family: "TT Norms";
+    font-family: 'TT Norms';
     font-weight: 400;
     letter-spacing: 25px;
   }
@@ -1291,7 +1306,7 @@ form.writeUs #writeUsEmail:focus {
   .team-photo-title {
     font-size: 36px;
     line-height: 290px;
-    font-family: "TT Norms";
+    font-family: 'TT Norms';
     font-weight: 400;
     letter-spacing: 20px;
   }
