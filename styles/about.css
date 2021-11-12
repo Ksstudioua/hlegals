@@ -78,7 +78,598 @@ section,
 summary,
 time,
 mark,
-au
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.c1 {
+  color: #fff;
+}
+
+.bg1 {
+  background-color: #fff;
+}
+
+.c2 {
+  color: #c4c4c4;
+}
+
+.bg2 {
+  background-color: #c4c4c4;
+}
+
+.c3 {
+  color: #24a3ff;
+}
+
+.bg3 {
+  background-color: #24a3ff;
+}
+
+.c4 {
+  color: #f0145a;
+}
+
+.bg4 {
+  background-color: #f0145a;
+}
+
+.c5 {
+  color: #686887;
+}
+
+.bg5 {
+  background-color: #686887;
+}
+
+.c6 {
+  color: #f5f5fa;
+}
+
+.bg6 {
+  background-color: #f5f5fa;
+}
+
+.c7 {
+  color: #b3b3ba;
+}
+
+.bg7 {
+  background-color: #b3b3ba;
+}
+
+.c8 {
+  color: #1c4280;
+}
+
+.bg8 {
+  background-color: #1c4280;
+}
+
+.c9 {
+  color: #143646;
+}
+
+.bg9 {
+  background-color: #143646;
+}
+
+.c10 {
+  color: #f48b30;
+}
+
+.bg10 {
+  background-color: #f48b30;
+}
+
+.c11 {
+  color: #9e4dc3;
+}
+
+.bg11 {
+  background-color: #9e4dc3;
+}
+
+.c12 {
+  color: #fd9339;
+}
+
+.bg12 {
+  background-color: #fd9339;
+}
+
+.c13 {
+  color: #e2e2e4;
+}
+
+.bg13 {
+  background-color: #e2e2e4;
+}
+
+.c14 {
+  color: #c71c36;
+}
+
+.bg14 {
+  background-color: #c71c36;
+}
+
+.c15 {
+  color: #dcf3f9;
+}
+
+.bg15 {
+  background-color: #dcf3f9;
+}
+
+.c16 {
+  color: #eaeaea;
+}
+
+.bg16 {
+  background-color: #eaeaea;
+}
+
+.c17 {
+  color: #282240;
+}
+
+.bg17 {
+  background-color: #282240;
+}
+
+.c18 {
+  color: #1d4568;
+}
+
+.bg18 {
+  background-color: #1d4568;
+}
+
+.c19 {
+  color: #000;
+}
+
+.bg19 {
+  background-color: #000;
+}
+
+.c20 {
+  color: #323264;
+}
+
+.bg20 {
+  background-color: #323264;
+}
+
+.c21 {
+  color: #e6e6f0;
+}
+
+.bg21 {
+  background-color: #e6e6f0;
+}
+
+.gradient-wrap {
+  background: linear-gradient(70deg, #643e72 6%, #323264 29%, #323264 44%, #323264 57%, #323264 75%, #7a425e 94%);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.gradient-title {
+  background: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-hero {
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*
+font height -x
+font-weight -y
+line-height (optional) -z
+@include font(x,y,z);
+*/
+.hero {
+  font-size: 42px;
+  line-height: 50px;
+  font-family: "TT Norms";
+  font-weight: 400;
+}
+.hero-mobile {
+  font-size: 32px;
+  line-height: 38px;
+  font-family: "TT Norms";
+  font-weight: 400;
+}
+
+.h2 {
+  font-size: 32px;
+  line-height: 38px;
+  font-family: "TT Norms";
+  font-weight: 400;
+}
+.h2-mobile {
+  font-size: 22px;
+  line-height: 26px;
+  font-family: "TT Norms";
+  font-weight: 400;
+}
+
+.h3 {
+  font-size: 24px;
+  line-height: 28px;
+  font-family: "TT Norms";
+  font-weight: 400;
+}
+.h3-mobile {
+  font-size: 18px;
+  line-height: 21px;
+  font-family: "TT Norms";
+  font-weight: 400;
+}
+.h3-caps {
+  font-size: 14px;
+  line-height: 17px;
+  font-family: "TT Norms";
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.h4 {
+  font-size: 18px;
+  line-height: 21px;
+  font-family: "TT Norms";
+  font-weight: 400;
+}
+
+.paragraph {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "TT Norms";
+  font-weight: 400;
+}
+.paragraph-min {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "TT Norms";
+  font-weight: 400;
+}
+
+.introduction {
+  font-size: 21px;
+  line-height: 30px;
+  font-family: "TT Norms";
+  font-weight: 400;
+  color: #c4c4c4;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.ease {
+  transition: all 0.3s ease;
+}
+
+.page-width {
+  max-width: 1320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.gradient-ico {
+  background: linear-gradient(180deg, #ef8080 0%, #f0145a 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rad-gradient {
+  background: radial-gradient(0deg, #fff 0%, #c4c4c4 25%, #24a3ff 50%, #f0145a 75%);
+}
+
+.shadow1 {
+  height: 12px;
+  background-color: #cacadb;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin: 0 20px;
+}
+.shadow2 {
+  height: 12px;
+  background-color: #e7e7f2;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin: 0 40px;
+}
+
+.pattern-wrap {
+  max-width: 690px;
+  max-height: 645px;
+  margin: 0 auto;
+  margin-top: 50px;
+  position: relative;
+}
+.pattern-wrap .pattern {
+  opacity: 0.5;
+}
+.pattern-wrap .p-logo {
+  position: absolute;
+  top: 103px;
+  left: 16px;
+}
+
+.shade {
+  width: 100%;
+  position: relative;
+  top: -200px;
+}
+
+.brdr {
+  border-style: solid;
+  border-width: 3px;
+  border-color: red;
+}
+
+.otstup {
+  height: 500px;
+}
+
+.arrow {
+  display: inline-block;
+  margin-left: 3px;
+  padding: 2px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #fff;
+  border-left-style: none;
+  border-top-style: none;
+  transform: rotate(-45deg) translateY(-2.5px);
+  opacity: 0.5;
+}
+
+.link-with-arrow:hover {
+  transition: all 0.5s ease;
+  color: #f48b30;
+  font-weight: 700;
+}
+.link-with-arrow:hover .arrow {
+  transition: all 0.5s ease-in;
+  transform: translateX(30px) rotate(-45deg) translateY(-2.5px) scale(3);
+  border-color: #f0145a;
+  animation-name: arrowBtn;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes arrowBtn {
+  0% {
+    transform: translateX(0px) rotate(-45deg) translateY(-2.5px) scale(1);
+    border-color: #f0145a;
+    opacity: 0;
+  }
+  15% {
+    transform: rotate(-45deg) translateY(-2.5px);
+    border-color: #f0145a;
+    opacity: 1;
+  }
+  30% {
+    transform: rotate(-45deg) translateY(-2.5px);
+    border-color: #f0145a;
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(50px) rotate(-45deg) translateY(-2.5px) scale(2);
+    border-color: #f0145a;
+    opacity: 0;
+  }
+}
+.header {
+  display: grid;
+  grid-template-columns: auto max-content max-content max-content max-content;
+  grid-template-rows: auto auto;
+  grid-template-areas: "logo   lang    adress   phone   facebook" "logo navigate navigate navigate navigate";
+  align-items: center;
+  padding-top: 56px;
+}
+@media (max-width: 1000px) {
+  .header {
+    grid-template-areas: "logo   lang    lang   phone   facebook" "logo navigate navigate navigate navigate";
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    grid-template-areas: "lang phone phone " "logo logo burger";
+    grid-template-rows: 50px 50px;
+    padding-top: 0;
+  }
+}
+.header .logo-wrap {
+  grid-area: logo;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.header .logo-wrap .logo {
+  height: 62px;
+  cursor: pointer;
+  z-index: 1000;
+}
+@media (max-width: 850px) {
+  .header .logo-wrap .logo {
+    height: 42px;
+  }
+}
+@media (max-width: 475px) {
+  .header .logo-wrap .logo {
+    height: 33px;
+  }
+}
+.header .logo-wrap .logo #logo_fills .fil0 {
+  fill: #46466e;
+}
+.header .logo-wrap .logo #logo_fills .fil1 {
+  fill: #f0145a;
+}
+.header .logo-wrap .logo #logo_fills .fil2 {
+  fill: #323264;
+}
+.header .logo-wrap .page-info-wrap {
+  display: none;
+  font-size: 38px;
+  line-height: 45px;
+  font-family: "TT Norms";
+  font-weight: 400;
+  color: #323264;
+}
+@media (max-width: 850px) {
+  .header .logo-wrap .page-info-wrap {
+    font-size: 26px;
+    line-height: 28px;
+    font-family: "TT Norms";
+    font-weight: 400;
+  }
+}
+@media (max-width: 475px) {
+  .header .logo-wrap .page-info-wrap {
+    font-size: 19px;
+    line-height: 22px;
+    font-family: "TT Norms";
+    font-weight: 400;
+  }
+}
+.header .logo-wrap .page-info-wrap .slash-modify {
+  padding-left: 5px;
+  color: #f0145a;
+  font-size: 47px;
+}
+@media (max-width: 850px) {
+  .header .logo-wrap .page-info-wrap .slash-modify {
+    font-size: 25px;
+  }
+}
+@media (max-width: 475px) {
+  .header .logo-wrap .page-info-wrap .slash-modify {
+    font-size: 20px;
+  }
+}
+.header .lang {
+  grid-area: lang;
+  font-size: 12px;
+  line-height: 14px;
+  font-family: "TT Norms";
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  color: #b3b3ba;
+}
+@media (max-width: 600px) {
+  .header .lang {
+    justify-content: flex-start;
+  }
+}
+.header .lang .langItem {
+  padding: 5px;
+  margin: 2px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #b3b3ba;
+}
+.header .lang .active {
+  background-color: #f0145a;
+  color: #fff;
+}
+.header .adress {
+  grid-area: adress;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: "TT Norms";
+  font-weight: 400;
+  padding-left: 20px;
+  text-align: right;
+  color: #b3b3ba;
+}
+@media (max-width: 1000px) {
+  .header .adress {
+    display: none;
+  }
+}
+.header .phone {
+  grid-area: phone;
+  font-size: 16px;
   line-height: 19px;
   font-family: "TT Norms";
   font-weight: 700;
@@ -263,6 +854,201 @@ au
   color: #f0145a;
 }
 
+form.writeUs {
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  max-width: 530px;
+  margin: 10px;
+}
+form.writeUs .title {
+  display: inline-block;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+form.writeUs .title a {
+  font-size: 18px;
+  line-height: 18px;
+  padding-left: 20px;
+}
+form.writeUs .title a:hover {
+  background-color: #a0a0a0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+form.writeUs #writeUsName,
+form.writeUs #writeUsMessage,
+form.writeUs #writeUsPhone,
+form.writeUs #writeUsEmail {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 8px;
+  border-color: transparent;
+  margin-bottom: 20px;
+  font-family: TT Norms;
+  font-size: 18px;
+  line-height: 26px;
+  outline: 0;
+  color: #686887;
+}
+form.writeUs #writeUsName::placeholder,
+form.writeUs #writeUsMessage::placeholder,
+form.writeUs #writeUsPhone::placeholder,
+form.writeUs #writeUsEmail::placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "TT Norms";
+  font-weight: 400;
+  color: #b3b3ba;
+}
+form.writeUs #writeUsName:hover, form.writeUs #writeUsName:focus,
+form.writeUs #writeUsMessage:hover,
+form.writeUs #writeUsMessage:focus,
+form.writeUs #writeUsPhone:hover,
+form.writeUs #writeUsPhone:focus,
+form.writeUs #writeUsEmail:hover,
+form.writeUs #writeUsEmail:focus {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 2px 0px #b3b3ba;
+}
+
+#writeUsMessage {
+  height: 180px;
+  resize: none;
+}
+
+.question {
+  padding-left: 30px;
+}
+
+#writeUsPhone {
+  margin-top: 10px;
+}
+
+#writeUsSubmit {
+  margin: 0 auto;
+  width: 250px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: "TT Norms";
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 8px;
+  border-color: transparent;
+  margin-bottom: 20px;
+  font-family: TT Norms;
+  font-size: 18px;
+  line-height: 26px;
+  outline: 0;
+}
+#writeUsSubmit::placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "TT Norms";
+  font-weight: 400;
+  color: #b3b3ba;
+}
+#writeUsSubmit:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 2px 0px #b3b3ba;
+}
+
+.myBigCaruselWrap {
+  box-sizing: unset;
+  margin: 0 auto;
+  width: 100%;
+  height: 110px;
+}
+@media (max-width: 450px) {
+  .myBigCaruselWrap {
+    height: 90px;
+    margin: 0 12px;
+  }
+}
+
+.myBigCaruselFrame {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.myBigCaruselFrameLine {
+  display: flex;
+  align-items: flex-start;
+  transform: translate(0px);
+  transition: all 1s ease;
+  background-color: #f5f5fa;
+}
+
+.myBigCaruselFrameItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f5f5fa;
+  box-sizing: unset;
+}
+.myBigCaruselFrameItem [type=image] {
+  width: 300px;
+  height: 109px;
+  border-radius: 20px;
+  margin: 0 15px;
+  box-sizing: unset;
+  display: block;
+}
+@media (max-width: 630px) {
+  .myBigCaruselFrameItem [type=image] {
+    width: 200px;
+    height: 73px;
+    border-radius: 15px;
+    margin: 0 12px;
+  }
+}
+@media (max-width: 450px) {
+  .myBigCaruselFrameItem [type=image] {
+    width: 157px;
+    height: 57px;
+    border-radius: 11px;
+    margin: 0 10px;
+  }
+}
+@media (max-width: 1245px) {
+  .myBigCaruselFrameItem .mmi3 {
+    display: none;
+  }
+}
+@media (max-width: 930px) {
+  .myBigCaruselFrameItem .mmi2 {
+    display: none;
+  }
+}
+
+.myBigCaruselSelectors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.myBigCaruselSelector {
+  width: 16px;
+  height: 16px;
+  background-color: #24a3ff;
+  border-radius: 50%;
+  margin-left: 8px;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.myBigCaruselActive {
+  opacity: 1;
+}
+
 .footer-wrap {
   display: flex;
   justify-content: space-between;
@@ -395,110 +1181,133 @@ au
   }
 }
 
-.main-wrap {
+.info-wrapper {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 100px;
 }
-@media (max-width: 600px) {
-  .main-wrap {
+@media (max-width: 1000px) {
+  .info-wrapper {
     flex-direction: column;
-  }
-}
-
-.main-contacts {
-  font-size: 21px;
-  line-height: 30px;
-  font-family: "TT Norms";
-  font-weight: 400;
-  color: #323264;
-  width: 412px;
-}
-@media (max-width: 600px) {
-  .main-contacts {
-    width: 100%;
-    padding: 0 20px;
-  }
-}
-.main-contacts hr {
-  margin: 0;
-  border: 2px solid #e6e6f0;
-}
-.main-contacts .hrAdress {
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
-.main-contacts .hrEmail {
-  margin-top: 40px;
-}
-.main-contacts p.phone {
-  padding-bottom: 20px;
-}
-.main-contacts .icon-facebook {
-  display: flex;
-  align-items: center;
-  font-size: 38px;
-  padding-top: 20px;
-}
-.main-contacts a.link {
-  font-size: 12px;
-  line-height: 16px;
-  font-family: "TT Norms";
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  padding-left: 10px;
-}
-
-@media (max-width: 600px) {
-  .main-form {
     padding-top: 40px;
-    width: 100%;
+    padding-bottom: 40px;
   }
 }
-
 @media (max-width: 600px) {
-  form.writeUs {
-    width: 100%;
-    margin: 0;
+  .info-wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
-
-@media (max-width: 600px) {
-  .main-container {
+.info-wrapper .block-left {
+  max-width: 750px;
+  padding-left: 80px;
+  padding-right: 40px;
+}
+@media (max-width: 1000px) {
+  .info-wrapper .block-left {
+    max-width: 96%;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+.info-wrapper .block-left .introduction {
+  color: #000;
+}
+.info-wrapper .block-right {
+  padding-right: 80px;
+  padding-left: 20px;
+  border-left: 4px solid #e6e6f0;
+  min-width: 356px;
+}
+@media (max-width: 1000px) {
+  .info-wrapper .block-right {
     width: 100%;
     padding: 0;
-  }
-}
-
-@media (max-width: 600px) {
-  #mainFormTitle {
-    font-size: 22px;
-    line-height: 26px;
-    font-family: "TT Norms";
-    font-weight: 700;
-  }
-}
-
-#formCross {
-  display: none;
-}
-
-main {
-  padding-top: 85px;
-}
-@media (max-width: 600px) {
-  main {
+    margin: 0 auto;
     padding-top: 20px;
+    margin-top: 20px;
+    text-align: center;
+    border-left: none;
+    border-top: 4px solid #e6e6f0;
+  }
+}
+.info-wrapper .block-right .introduction {
+  font-size: 18px;
+  line-height: 21px;
+  font-family: "TT Norms";
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.info-wrapper .block-right .hero:before {
+  padding-right: 15px;
+}
+
+.team-photo-title {
+  text-transform: uppercase;
+  background-image: url(../assets/images/team_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-size: 96px;
+  line-height: 438px;
+  font-family: "TT Norms";
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 63px;
+  opacity: 0.8;
+  text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+}
+@media (max-width: 1000px) {
+  .team-photo-title {
+    font-size: 80px;
+    line-height: 290px;
+    font-family: "TT Norms";
+    font-weight: 400;
+    letter-spacing: 50px;
+  }
+}
+@media (max-width: 800px) {
+  .team-photo-title {
+    font-size: 60px;
+    line-height: 290px;
+    font-family: "TT Norms";
+    font-weight: 400;
+    letter-spacing: 30px;
+  }
+}
+@media (max-width: 550px) {
+  .team-photo-title {
+    font-size: 45px;
+    line-height: 290px;
+    font-family: "TT Norms";
+    font-weight: 400;
+    letter-spacing: 25px;
+  }
+}
+@media (max-width: 550px) {
+  .team-photo-title {
+    font-size: 36px;
+    line-height: 290px;
+    font-family: "TT Norms";
+    font-weight: 400;
+    letter-spacing: 20px;
   }
 }
 
-iframe.map {
-  padding-top: 70px;
+.bc3 {
+  border: 2px solid #e6e6f0;
 }
-@media (max-width: 600px) {
-  iframe.map {
-    padding-top: 40px;
+
+.carusel-title {
+  text-align: center;
+  padding: 30px 0;
+}
+@media (max-width: 550px) {
+  .carusel-title {
+    padding: 20px 0 10px 0;
   }
 }
 
