@@ -964,6 +964,12 @@ form.writeUs #writeUsEmail:focus {
   width: 100%;
   height: 110px;
 }
+@media (max-width: 450px) {
+  .myBigCaruselWrap {
+    height: 90px;
+    margin: 0 12px;
+  }
+}
 
 .myBigCaruselFrame {
   width: 100%;
@@ -990,53 +996,35 @@ form.writeUs #writeUsEmail:focus {
 .myBigCaruselFrameItem [type=image] {
   width: 300px;
   height: 109px;
-  border-radius: 15px;
+  border-radius: 20px;
   margin: 0 15px;
   box-sizing: unset;
   display: block;
 }
-.myBigCaruselFrameItem .container1 {
-  display: none;
-}
-@media (max-width: 899px) {
-  .myBigCaruselFrameItem .container1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+@media (max-width: 630px) {
+  .myBigCaruselFrameItem [type=image] {
+    width: 200px;
+    height: 73px;
+    border-radius: 15px;
+    margin: 0 12px;
   }
 }
-.myBigCaruselFrameItem .container2 {
-  display: none;
-}
-@media (min-width: 900px) and (max-width: 1300px) {
-  .myBigCaruselFrameItem .container2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+@media (max-width: 450px) {
+  .myBigCaruselFrameItem [type=image] {
+    width: 157px;
+    height: 57px;
+    border-radius: 11px;
+    margin: 0 10px;
   }
 }
-.myBigCaruselFrameItem .container3 {
-  display: none;
-}
-@media (min-width: 1301px) {
-  .myBigCaruselFrameItem .container3 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+@media (max-width: 1245px) {
+  .myBigCaruselFrameItem .mmi3 {
+    display: none;
   }
 }
-
-.myBigCaruselImg {
-  width: 250px;
-  margin: 0 25px;
-}
-@media (max-width: 650px) {
-  .myBigCaruselImg {
-    width: 150px;
-    margin: 0 15px;
+@media (max-width: 930px) {
+  .myBigCaruselFrameItem .mmi2 {
+    display: none;
   }
 }
 
@@ -1317,6 +1305,12 @@ form.writeUs #writeUsEmail:focus {
   text-align: center;
   padding: 30px 0;
 }
+@media (max-width: 550px) {
+  .carusel-title {
+    padding: 20px 0 10px 0;
+  }
+}
+
 #navteam {
   border-bottom-color: #f0145a;
   color: #f0145a;
