@@ -991,7 +991,7 @@ form.writeUs #writeUsEmail:focus {
   width: 300px;
   height: 109px;
   border-radius: 15px;
-  background-image: url(../assets/images/caruselAdvanced1.jpg);
+  background-image: url("../assets/images/caruselAdvanced1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
