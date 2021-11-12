@@ -928,30 +928,30 @@ line-height (optional) -z
 .img2 {
   z-index: 10;
   animation-name: animP;
-  animation-duration: 15s;
+  animation-duration: 30s;
   animation-iteration-count: infinite;
 }
 
 @keyframes animP {
   0% {
-    -webkit-filter: blur(0px);
-    opacity: 1;
-  }
-  50% {
-    -webkit-filter: blur(0px);
-    opacity: 1;
-  }
-  70% {
     -webkit-filter: blur(50px);
     opacity: 0.9;
   }
-  80% {
+  15% {
     -webkit-filter: blur(50px);
     opacity: 0.9;
+  }
+  25% {
+    -webkit-filter: blur(0px);
+    opacity: 1;
+  }
+  95% {
+    -webkit-filter: blur(0px);
+    opacity: 1;
   }
   100% {
-    -webkit-filter: blur(0px);
-    opacity: 1;
+    -webkit-filter: blur(50px);
+    opacity: 0.9;
   }
 }
 .carusel1 {
@@ -1407,6 +1407,7 @@ line-height (optional) -z
 }
 @media (max-width: 950px) {
   .myBigCaruselImgSmall {
+    display: inline-block;
     float: left;
     margin-top: 30px;
     margin-right: 30px;
