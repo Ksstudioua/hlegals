@@ -992,6 +992,7 @@ form.writeUs #writeUsEmail:focus {
   height: 109px;
   border-radius: 15px;
   margin: 0 15px;
+  box-sizing: unset;
 }
 .myBigCaruselFrameItem .container1 {
   display: none;
