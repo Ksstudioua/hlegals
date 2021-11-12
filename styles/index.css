@@ -1407,7 +1407,6 @@ line-height (optional) -z
 }
 @media (max-width: 950px) {
   .myBigCaruselImgSmall {
-    display: inline-block;
     float: left;
     margin-top: 30px;
     margin-right: 30px;

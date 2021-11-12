@@ -854,201 +854,6 @@ line-height (optional) -z
   color: #f0145a;
 }
 
-form.writeUs {
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  max-width: 530px;
-  margin: 10px;
-}
-form.writeUs .title {
-  display: inline-block;
-  padding: 20px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-form.writeUs .title a {
-  font-size: 18px;
-  line-height: 18px;
-  padding-left: 20px;
-}
-form.writeUs .title a:hover {
-  background-color: #a0a0a0;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-form.writeUs #writeUsName,
-form.writeUs #writeUsMessage,
-form.writeUs #writeUsPhone,
-form.writeUs #writeUsEmail {
-  width: calc(100% - 40px);
-  margin: 0 auto;
-  padding: 10px;
-  border-radius: 8px;
-  border-color: transparent;
-  margin-bottom: 20px;
-  font-family: TT Norms;
-  font-size: 18px;
-  line-height: 26px;
-  outline: 0;
-  color: #686887;
-}
-form.writeUs #writeUsName::placeholder,
-form.writeUs #writeUsMessage::placeholder,
-form.writeUs #writeUsPhone::placeholder,
-form.writeUs #writeUsEmail::placeholder {
-  font-size: 18px;
-  line-height: 26px;
-  font-family: "TT Norms";
-  font-weight: 400;
-  color: #b3b3ba;
-}
-form.writeUs #writeUsName:hover, form.writeUs #writeUsName:focus,
-form.writeUs #writeUsMessage:hover,
-form.writeUs #writeUsMessage:focus,
-form.writeUs #writeUsPhone:hover,
-form.writeUs #writeUsPhone:focus,
-form.writeUs #writeUsEmail:hover,
-form.writeUs #writeUsEmail:focus {
-  transform: scale(1.02);
-  box-shadow: 0px 0px 2px 0px #b3b3ba;
-}
-
-#writeUsMessage {
-  height: 180px;
-  resize: none;
-}
-
-.question {
-  padding-left: 30px;
-}
-
-#writeUsPhone {
-  margin-top: 10px;
-}
-
-#writeUsSubmit {
-  margin: 0 auto;
-  width: 250px;
-  color: #fff;
-  font-size: 14px;
-  line-height: 17px;
-  font-family: "TT Norms";
-  font-weight: 500;
-  padding: 10px;
-  border-radius: 8px;
-  border-color: transparent;
-  margin-bottom: 20px;
-  font-family: TT Norms;
-  font-size: 18px;
-  line-height: 26px;
-  outline: 0;
-}
-#writeUsSubmit::placeholder {
-  font-size: 18px;
-  line-height: 26px;
-  font-family: "TT Norms";
-  font-weight: 400;
-  color: #b3b3ba;
-}
-#writeUsSubmit:hover {
-  transform: scale(1.02);
-  box-shadow: 0px 0px 2px 0px #b3b3ba;
-}
-
-.myBigCaruselWrap {
-  box-sizing: unset;
-  margin: 0 auto;
-  width: 100%;
-  height: 110px;
-}
-@media (max-width: 450px) {
-  .myBigCaruselWrap {
-    height: 90px;
-    margin: 0 12px;
-  }
-}
-
-.myBigCaruselFrame {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  border-radius: 12px;
-}
-
-.myBigCaruselFrameLine {
-  display: flex;
-  align-items: flex-start;
-  transform: translate(0px);
-  transition: all 1s ease;
-  background-color: #f5f5fa;
-}
-
-.myBigCaruselFrameItem {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #f5f5fa;
-  box-sizing: unset;
-}
-.myBigCaruselFrameItem [type=image] {
-  width: 300px;
-  height: 109px;
-  border-radius: 20px;
-  margin: 0 15px;
-  box-sizing: unset;
-  display: block;
-}
-@media (max-width: 630px) {
-  .myBigCaruselFrameItem [type=image] {
-    width: 200px;
-    height: 73px;
-    border-radius: 15px;
-    margin: 0 12px;
-  }
-}
-@media (max-width: 450px) {
-  .myBigCaruselFrameItem [type=image] {
-    width: 157px;
-    height: 57px;
-    border-radius: 11px;
-    margin: 0 10px;
-  }
-}
-@media (max-width: 1245px) {
-  .myBigCaruselFrameItem .mmi3 {
-    display: none;
-  }
-}
-@media (max-width: 930px) {
-  .myBigCaruselFrameItem .mmi2 {
-    display: none;
-  }
-}
-
-.myBigCaruselSelectors {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 30px 0;
-}
-
-.myBigCaruselSelector {
-  width: 16px;
-  height: 16px;
-  background-color: #24a3ff;
-  border-radius: 50%;
-  margin-left: 8px;
-  opacity: 0.25;
-  cursor: pointer;
-}
-
-.myBigCaruselActive {
-  opacity: 1;
-}
-
 .footer-wrap {
   display: flex;
   justify-content: space-between;
@@ -1181,134 +986,23 @@ form.writeUs #writeUsEmail:focus {
   }
 }
 
-.info-wrapper {
-  display: flex;
+h1.hero {
+  max-width: 870px;
+  margin: 0 auto;
   padding-top: 80px;
-  padding-bottom: 100px;
-}
-@media (max-width: 1000px) {
-  .info-wrapper {
-    flex-direction: column;
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-}
-@media (max-width: 600px) {
-  .info-wrapper {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}
-.info-wrapper .block-left {
-  max-width: 750px;
-  padding-left: 80px;
-  padding-right: 40px;
-}
-@media (max-width: 1000px) {
-  .info-wrapper .block-left {
-    max-width: 96%;
-    padding: 0;
-    margin: 0 auto;
-  }
-}
-.info-wrapper .block-left .introduction {
-  color: #000;
-}
-.info-wrapper .block-right {
-  padding-right: 80px;
-  padding-left: 20px;
-  border-left: 4px solid #e6e6f0;
-  min-width: 356px;
-}
-@media (max-width: 1000px) {
-  .info-wrapper .block-right {
-    width: 100%;
-    padding: 0;
-    margin: 0 auto;
-    padding-top: 20px;
-    margin-top: 20px;
-    text-align: center;
-    border-left: none;
-    border-top: 4px solid #e6e6f0;
-  }
-}
-.info-wrapper .block-right .introduction {
-  font-size: 18px;
-  line-height: 21px;
-  font-family: "TT Norms";
-  font-weight: 400;
-  padding-top: 10px;
-  padding-bottom: 40px;
-}
-.info-wrapper .block-right .hero:before {
-  padding-right: 15px;
 }
 
-.team-photo-title {
-  text-transform: uppercase;
-  background-image: url(../assets/images/team_bg.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  font-size: 96px;
-  line-height: 438px;
-  font-family: "TT Norms";
-  font-weight: 400;
-  color: #fff;
-  text-align: center;
-  letter-spacing: 63px;
-  opacity: 0.8;
-  text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
-}
-@media (max-width: 1000px) {
-  .team-photo-title {
-    font-size: 80px;
-    line-height: 290px;
-    font-family: "TT Norms";
-    font-weight: 400;
-    letter-spacing: 50px;
-  }
-}
-@media (max-width: 800px) {
-  .team-photo-title {
-    font-size: 60px;
-    line-height: 290px;
-    font-family: "TT Norms";
-    font-weight: 400;
-    letter-spacing: 30px;
-  }
-}
-@media (max-width: 550px) {
-  .team-photo-title {
-    font-size: 45px;
-    line-height: 290px;
-    font-family: "TT Norms";
-    font-weight: 400;
-    letter-spacing: 25px;
-  }
-}
-@media (max-width: 550px) {
-  .team-photo-title {
-    font-size: 36px;
-    line-height: 290px;
-    font-family: "TT Norms";
-    font-weight: 400;
-    letter-spacing: 20px;
-  }
-}
-
-.bc3 {
-  border: 2px solid #e6e6f0;
-}
-
-.carusel-title {
-  text-align: center;
-  padding: 30px 0;
-}
-@media (max-width: 550px) {
-  .carusel-title {
-    padding: 20px 0 10px 0;
-  }
+.arrow-box {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 #navteam {
@@ -1318,4 +1012,20 @@ form.writeUs #writeUsEmail:focus {
 
 .burger-menu .dropdown #burgteam {
   color: #f0145a;
+}
+
+.bc1 {
+  border-color: #fff;
+}
+
+.bc3 {
+  border-color: #24a3ff;
+}
+
+.arrow {
+  transform: scaleY(1.8) scaleX(1.4) rotate(-45deg) translateX(-1.85px) translateY(-2.5px);
+  -webkit-transform: scaleY(1.8) scaleX(1.4) rotate(-45deg) translateX(-1.4px) translateY(-2px);
+  -moz-transform: scaleY(1.8) scaleX(1.4) rotate(-45deg) translateX(-1.85px) translateY(-2.5px);
+  -ms-transform: scaleY(1.8) scaleX(1.4) rotate(-45deg) translateX(-1.85px) translateY(-2.5px);
+  -o-transform: scaleY(1.8) scaleX(1.4) rotate(-45deg) translateX(-1.85px) translateY(-2.5px);
 }
