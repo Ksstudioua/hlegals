@@ -986,30 +986,29 @@ line-height (optional) -z
   }
 }
 
-h1.hero {
+.page-team-title {
   max-width: 870px;
   margin: 0 auto;
   padding: 0 20px;
   padding-top: 80px;
 }
-
-.arrow-box {
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
+@media (max-width: 800px) {
+  .page-team-title {
+    font-size: 37px;
+    line-height: 46px;
+    font-family: "TT Norms";
+    font-weight: 700;
+  }
 }
-.arrow-box:hover {
-  background-color: #24a3ff;
-}
-.arrow-box:hover .arrow {
-  border-color: #fff;
-}
-
-.item-name:hover {
-  font-weight: 700;
+@media (max-width: 500px) {
+  .page-team-title {
+    font-size: 32px;
+    line-height: 38px;
+    font-family: "TT Norms";
+    font-weight: 700;
+    padding: 0;
+    padding-top: 20px;
+  }
 }
 
 .content-wrap {
@@ -1020,10 +1019,11 @@ h1.hero {
   padding-top: 30px;
   padding-bottom: 50px;
 }
-
-.content-photo {
-  max-width: 100%;
-  padding: 10px;
+@media (max-width: 500px) {
+  .content-wrap {
+    padding-top: 10px;
+    justify-content: flex-start;
+  }
 }
 
 .content-item {
@@ -1031,12 +1031,69 @@ h1.hero {
   box-sizing: border-box;
   padding-top: 40px;
 }
-
-.info-wrap {
+@media (max-width: 500px) {
+  .content-item {
+    padding-top: 10px;
+    display: flex;
+  }
+}
+.content-item .content-photo {
+  max-width: 100%;
+  padding: 10px;
+}
+@media (max-width: 500px) {
+  .content-item .content-photo {
+    max-width: 158px;
+    border-radius: 20px;
+  }
+}
+.content-item .info-wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 10px;
+}
+@media (max-width: 500px) {
+  .content-item .info-wrap {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-left: 5px;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .content-item .info-wrap .text-wrapper .item-name {
+    line-height: 21px;
+    padding: 0;
+  }
+}
+.content-item .info-wrap .text-wrapper .item-name:hover {
+  font-weight: 700;
+}
+@media (max-width: 500px) {
+  .content-item .info-wrap .text-wrapper .item-cond {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+.content-item .info-wrap .arrow-box {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.content-item .info-wrap .arrow-box:hover {
+  background-color: #24a3ff;
+}
+.content-item .info-wrap .arrow-box:hover .arrow {
+  border-color: #fff;
+}
+.content-item .info-wrap .arrow-box .arrow {
+  transform: scaleY(1.8) scaleX(1.4) rotate(-45deg) translateX(-1px) translateY(-1px);
 }
 
 #navteam {
@@ -1054,8 +1111,4 @@ h1.hero {
 
 .bc3 {
   border-color: #24a3ff;
-}
-
-.arrow {
-  transform: scaleY(1.8) scaleX(1.4) rotate(-45deg) translateX(-1px) translateY(-1px);
 }
