@@ -989,6 +989,7 @@ line-height (optional) -z
 h1.hero {
   max-width: 870px;
   margin: 0 auto;
+  padding: 0 20px;
   padding-top: 80px;
 }
 
@@ -999,10 +1000,45 @@ h1.hero {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+}
+.arrow-box:hover {
+  background-color: #24a3ff;
+}
+.arrow-box:hover .arrow {
+  border-color: #fff;
+}
+
+.content-wrap {
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+.item-name:hover {
+  font-weight: 700;
+}
+
+.content-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.content-photo {
+  max-width: 100%;
+  padding: 10px;
+}
+
+.content-item {
+  max-width: 413px;
+  box-sizing: border-box;
+}
+
+.info-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
 }
 
 #navteam {
@@ -1023,9 +1059,5 @@ h1.hero {
 }
 
 .arrow {
-  transform: scaleY(1.8) scaleX(1.4) rotate(-45deg) translateX(-1.85px) translateY(-2.5px);
-  -webkit-transform: scaleY(1.8) scaleX(1.4) rotate(-45deg) translateX(-1.4px) translateY(-2px);
-  -moz-transform: scaleY(1.8) scaleX(1.4) rotate(-45deg) translateX(-1.85px) translateY(-2.5px);
-  -ms-transform: scaleY(1.8) scaleX(1.4) rotate(-45deg) translateX(-1.85px) translateY(-2.5px);
-  -o-transform: scaleY(1.8) scaleX(1.4) rotate(-45deg) translateX(-1.85px) translateY(-2.5px);
+  transform: scaleY(1.8) scaleX(1.4) rotate(-45deg) translateX(-1px) translateY(-1px);
 }

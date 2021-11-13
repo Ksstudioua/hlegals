@@ -12,3 +12,4 @@ package.json
 package-lock.json
 gruntfile.js
 *.cmd
+gulpfile.js
