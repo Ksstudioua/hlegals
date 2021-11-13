@@ -1360,6 +1360,10 @@ line-height (optional) -z
     padding-top: 10px;
   }
 }
+.myBigCaruselInfo1:hover {
+  color: #b3b3ba;
+  font-weight: 700;
+}
 
 .myBigCaruselInfo2 {
   padding-top: 5px;
