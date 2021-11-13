@@ -1008,11 +1008,6 @@ h1.hero {
   border-color: #fff;
 }
 
-.content-wrap {
-  padding-top: 70px;
-  padding-bottom: 50px;
-}
-
 .item-name:hover {
   font-weight: 700;
 }
@@ -1022,6 +1017,8 @@ h1.hero {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 .content-photo {
@@ -1032,6 +1029,7 @@ h1.hero {
 .content-item {
   max-width: 413px;
   box-sizing: border-box;
+  padding-top: 40px;
 }
 
 .info-wrap {
