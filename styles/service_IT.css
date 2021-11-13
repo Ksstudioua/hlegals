@@ -1318,8 +1318,8 @@ form.writeUs #writeUsEmail:focus {
 }
 
 .keyboard {
-  background: url("../assets/images/bgKeyboard.png"), linear-gradient(200deg, #323264 40%, #323264 90%, #643e72 98%);
-  background-size: auto;
+  background: url("../assets/images/bgKeyboard1.png"), linear-gradient(200deg, #323264 40%, #323264 90%, #643e72 98%);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
 }
