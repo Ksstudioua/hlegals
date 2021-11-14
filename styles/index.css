@@ -507,9 +507,35 @@ line-height (optional) -z
   transition: all 0.5s ease-in;
   transform: translateX(30px) rotate(-45deg) translateY(-2.5px) scale(3);
   border-color: #f0145a;
+  -webkit-animation-name: arrowBtn;
   animation-name: arrowBtn;
+  -webkit-animation-duration: 0.8s;
   animation-duration: 0.8s;
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes arrowBtn {
+  0% {
+    transform: translateX(0px) rotate(-45deg) translateY(-2.5px) scale(1);
+    border-color: #f0145a;
+    opacity: 0;
+  }
+  15% {
+    transform: rotate(-45deg) translateY(-2.5px);
+    border-color: #f0145a;
+    opacity: 1;
+  }
+  30% {
+    transform: rotate(-45deg) translateY(-2.5px);
+    border-color: #f0145a;
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(50px) rotate(-45deg) translateY(-2.5px) scale(2);
+    border-color: #f0145a;
+    opacity: 0;
+  }
 }
 
 @keyframes arrowBtn {
@@ -536,6 +562,7 @@ line-height (optional) -z
 }
 .header {
   display: grid;
+  grid-template-columns: auto -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
   grid-template-columns: auto max-content max-content max-content max-content;
   grid-template-rows: auto auto;
   grid-template-areas: "logo   lang    adress   phone   facebook" "logo navigate navigate navigate navigate";
@@ -927,31 +954,57 @@ line-height (optional) -z
 
 .img2 {
   z-index: 10;
+  -webkit-animation-name: animP;
   animation-name: animP;
-  animation-duration: 30s;
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes animP {
+  0% {
+    -webkit-filter: blur(0px);
+    opacity: 1;
+  }
+  50% {
+    -webkit-filter: blur(0px);
+    opacity: 1;
+  }
+  70% {
+    -webkit-filter: blur(50px);
+    opacity: 0.9;
+  }
+  80% {
+    -webkit-filter: blur(50px);
+    opacity: 0.9;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    opacity: 1;
+  }
 }
 
 @keyframes animP {
   0% {
-    -webkit-filter: blur(50px);
-    opacity: 0.9;
-  }
-  15% {
-    -webkit-filter: blur(50px);
-    opacity: 0.9;
-  }
-  25% {
     -webkit-filter: blur(0px);
     opacity: 1;
   }
-  95% {
+  50% {
     -webkit-filter: blur(0px);
     opacity: 1;
+  }
+  70% {
+    -webkit-filter: blur(50px);
+    opacity: 0.9;
+  }
+  80% {
+    -webkit-filter: blur(50px);
+    opacity: 0.9;
   }
   100% {
-    -webkit-filter: blur(50px);
-    opacity: 0.9;
+    -webkit-filter: blur(0px);
+    opacity: 1;
   }
 }
 .carusel1 {
@@ -1232,6 +1285,7 @@ line-height (optional) -z
     padding-left: 10px;
     font-size: 18px;
     line-height: 21px;
+    -webkit-margin-before: 0;
     margin-block-start: 0;
   }
 }
@@ -1359,10 +1413,6 @@ line-height (optional) -z
     margin-top: 0px;
     padding-top: 10px;
   }
-}
-.myBigCaruselInfo1:hover {
-  color: #b3b3ba;
-  font-weight: 700;
 }
 
 .myBigCaruselInfo2 {

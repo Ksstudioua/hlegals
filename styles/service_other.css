@@ -507,9 +507,35 @@ line-height (optional) -z
   transition: all 0.5s ease-in;
   transform: translateX(30px) rotate(-45deg) translateY(-2.5px) scale(3);
   border-color: #f0145a;
+  -webkit-animation-name: arrowBtn;
   animation-name: arrowBtn;
+  -webkit-animation-duration: 0.8s;
   animation-duration: 0.8s;
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes arrowBtn {
+  0% {
+    transform: translateX(0px) rotate(-45deg) translateY(-2.5px) scale(1);
+    border-color: #f0145a;
+    opacity: 0;
+  }
+  15% {
+    transform: rotate(-45deg) translateY(-2.5px);
+    border-color: #f0145a;
+    opacity: 1;
+  }
+  30% {
+    transform: rotate(-45deg) translateY(-2.5px);
+    border-color: #f0145a;
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(50px) rotate(-45deg) translateY(-2.5px) scale(2);
+    border-color: #f0145a;
+    opacity: 0;
+  }
 }
 
 @keyframes arrowBtn {
@@ -536,6 +562,7 @@ line-height (optional) -z
 }
 .header {
   display: grid;
+  grid-template-columns: auto -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
   grid-template-columns: auto max-content max-content max-content max-content;
   grid-template-rows: auto auto;
   grid-template-areas: "logo   lang    adress   phone   facebook" "logo navigate navigate navigate navigate";
@@ -892,6 +919,20 @@ form.writeUs #writeUsEmail {
   outline: 0;
   color: #686887;
 }
+form.writeUs #writeUsName::-moz-placeholder, form.writeUs #writeUsMessage::-moz-placeholder, form.writeUs #writeUsPhone::-moz-placeholder, form.writeUs #writeUsEmail::-moz-placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "TT Norms";
+  font-weight: 400;
+  color: #b3b3ba;
+}
+form.writeUs #writeUsName:-ms-input-placeholder, form.writeUs #writeUsMessage:-ms-input-placeholder, form.writeUs #writeUsPhone:-ms-input-placeholder, form.writeUs #writeUsEmail:-ms-input-placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "TT Norms";
+  font-weight: 400;
+  color: #b3b3ba;
+}
 form.writeUs #writeUsName::placeholder,
 form.writeUs #writeUsMessage::placeholder,
 form.writeUs #writeUsPhone::placeholder,
@@ -942,6 +983,20 @@ form.writeUs #writeUsEmail:focus {
   font-size: 18px;
   line-height: 26px;
   outline: 0;
+}
+#writeUsSubmit::-moz-placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "TT Norms";
+  font-weight: 400;
+  color: #b3b3ba;
+}
+#writeUsSubmit:-ms-input-placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "TT Norms";
+  font-weight: 400;
+  color: #b3b3ba;
 }
 #writeUsSubmit::placeholder {
   font-size: 18px;

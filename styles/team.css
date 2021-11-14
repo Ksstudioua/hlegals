@@ -507,9 +507,35 @@ line-height (optional) -z
   transition: all 0.5s ease-in;
   transform: translateX(30px) rotate(-45deg) translateY(-2.5px) scale(3);
   border-color: #f0145a;
+  -webkit-animation-name: arrowBtn;
   animation-name: arrowBtn;
+  -webkit-animation-duration: 0.8s;
   animation-duration: 0.8s;
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes arrowBtn {
+  0% {
+    transform: translateX(0px) rotate(-45deg) translateY(-2.5px) scale(1);
+    border-color: #f0145a;
+    opacity: 0;
+  }
+  15% {
+    transform: rotate(-45deg) translateY(-2.5px);
+    border-color: #f0145a;
+    opacity: 1;
+  }
+  30% {
+    transform: rotate(-45deg) translateY(-2.5px);
+    border-color: #f0145a;
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(50px) rotate(-45deg) translateY(-2.5px) scale(2);
+    border-color: #f0145a;
+    opacity: 0;
+  }
 }
 
 @keyframes arrowBtn {
@@ -536,6 +562,7 @@ line-height (optional) -z
 }
 .header {
   display: grid;
+  grid-template-columns: auto -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
   grid-template-columns: auto max-content max-content max-content max-content;
   grid-template-rows: auto auto;
   grid-template-areas: "logo   lang    adress   phone   facebook" "logo navigate navigate navigate navigate";
@@ -854,6 +881,233 @@ line-height (optional) -z
   color: #f0145a;
 }
 
+form.writeUs {
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  max-width: 530px;
+  margin: 10px;
+}
+form.writeUs .title {
+  display: inline-block;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+form.writeUs .title a {
+  font-size: 18px;
+  line-height: 18px;
+  padding-left: 20px;
+}
+form.writeUs .title a:hover {
+  background-color: #a0a0a0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+form.writeUs #writeUsName,
+form.writeUs #writeUsMessage,
+form.writeUs #writeUsPhone,
+form.writeUs #writeUsEmail {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 8px;
+  border-color: transparent;
+  margin-bottom: 20px;
+  font-family: TT Norms;
+  font-size: 18px;
+  line-height: 26px;
+  outline: 0;
+  color: #686887;
+}
+form.writeUs #writeUsName::-moz-placeholder, form.writeUs #writeUsMessage::-moz-placeholder, form.writeUs #writeUsPhone::-moz-placeholder, form.writeUs #writeUsEmail::-moz-placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "TT Norms";
+  font-weight: 400;
+  color: #b3b3ba;
+}
+form.writeUs #writeUsName:-ms-input-placeholder, form.writeUs #writeUsMessage:-ms-input-placeholder, form.writeUs #writeUsPhone:-ms-input-placeholder, form.writeUs #writeUsEmail:-ms-input-placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "TT Norms";
+  font-weight: 400;
+  color: #b3b3ba;
+}
+form.writeUs #writeUsName::placeholder,
+form.writeUs #writeUsMessage::placeholder,
+form.writeUs #writeUsPhone::placeholder,
+form.writeUs #writeUsEmail::placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "TT Norms";
+  font-weight: 400;
+  color: #b3b3ba;
+}
+form.writeUs #writeUsName:hover, form.writeUs #writeUsName:focus,
+form.writeUs #writeUsMessage:hover,
+form.writeUs #writeUsMessage:focus,
+form.writeUs #writeUsPhone:hover,
+form.writeUs #writeUsPhone:focus,
+form.writeUs #writeUsEmail:hover,
+form.writeUs #writeUsEmail:focus {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 2px 0px #b3b3ba;
+}
+
+#writeUsMessage {
+  height: 180px;
+  resize: none;
+}
+
+.question {
+  padding-left: 30px;
+}
+
+#writeUsPhone {
+  margin-top: 10px;
+}
+
+#writeUsSubmit {
+  margin: 0 auto;
+  width: 250px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: "TT Norms";
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 8px;
+  border-color: transparent;
+  margin-bottom: 20px;
+  font-family: TT Norms;
+  font-size: 18px;
+  line-height: 26px;
+  outline: 0;
+}
+#writeUsSubmit::-moz-placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "TT Norms";
+  font-weight: 400;
+  color: #b3b3ba;
+}
+#writeUsSubmit:-ms-input-placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "TT Norms";
+  font-weight: 400;
+  color: #b3b3ba;
+}
+#writeUsSubmit::placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "TT Norms";
+  font-weight: 400;
+  color: #b3b3ba;
+}
+#writeUsSubmit:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 2px 0px #b3b3ba;
+}
+
+.myBigCaruselWrap {
+  box-sizing: unset;
+  margin: 0 auto;
+  width: 100%;
+  height: 110px;
+}
+
+.myBigCaruselFrame {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.myBigCaruselFrameLine {
+  display: flex;
+  align-items: flex-start;
+  transform: translate(0px);
+  transition: all 1s ease;
+  background-color: #f5f5fa;
+}
+
+.myBigCaruselFrameItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f5f5fa;
+  box-sizing: unset;
+}
+.myBigCaruselFrameItem .container1 {
+  display: none;
+}
+@media (max-width: 899px) {
+  .myBigCaruselFrameItem .container1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.myBigCaruselFrameItem .container2 {
+  display: none;
+}
+@media (min-width: 900px) and (max-width: 1300px) {
+  .myBigCaruselFrameItem .container2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.myBigCaruselFrameItem .container3 {
+  display: none;
+}
+@media (min-width: 1301px) {
+  .myBigCaruselFrameItem .container3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.myBigCaruselImg {
+  width: 250px;
+  margin: 0 25px;
+}
+@media (max-width: 650px) {
+  .myBigCaruselImg {
+    width: 150px;
+    margin: 0 15px;
+  }
+}
+
+.myBigCaruselSelectors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.myBigCaruselSelector {
+  width: 16px;
+  height: 16px;
+  background-color: #24a3ff;
+  border-radius: 50%;
+  margin-left: 8px;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.myBigCaruselActive {
+  opacity: 1;
+}
+
 .footer-wrap {
   display: flex;
   justify-content: space-between;
@@ -986,116 +1240,130 @@ line-height (optional) -z
   }
 }
 
-.page-team-title {
-  max-width: 870px;
-  margin: 0 auto;
-  padding: 0 20px;
+.info-wrapper {
+  display: flex;
   padding-top: 80px;
+  padding-bottom: 100px;
+}
+@media (max-width: 1000px) {
+  .info-wrapper {
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .info-wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+.info-wrapper .block-left {
+  max-width: 750px;
+  padding-left: 80px;
+  padding-right: 40px;
+}
+@media (max-width: 1000px) {
+  .info-wrapper .block-left {
+    max-width: 96%;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+.info-wrapper .block-left .introduction {
+  color: #000;
+}
+.info-wrapper .block-right {
+  padding-right: 80px;
+  padding-left: 20px;
+  border-left: 4px solid #e6e6f0;
+  min-width: 356px;
+}
+@media (max-width: 1000px) {
+  .info-wrapper .block-right {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    padding-top: 20px;
+    margin-top: 20px;
+    text-align: center;
+    border-left: none;
+    border-top: 4px solid #e6e6f0;
+  }
+}
+.info-wrapper .block-right .introduction {
+  font-size: 18px;
+  line-height: 21px;
+  font-family: "TT Norms";
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.info-wrapper .block-right .hero:before {
+  padding-right: 15px;
+}
+
+.team-photo-title {
+  text-transform: uppercase;
+  background-image: url(../assets/images/team_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-size: 96px;
+  line-height: 438px;
+  font-family: "TT Norms";
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 63px;
+  opacity: 0.8;
+  text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+}
+@media (max-width: 1000px) {
+  .team-photo-title {
+    font-size: 80px;
+    line-height: 290px;
+    font-family: "TT Norms";
+    font-weight: 400;
+    letter-spacing: 50px;
+  }
 }
 @media (max-width: 800px) {
-  .page-team-title {
-    font-size: 37px;
-    line-height: 46px;
+  .team-photo-title {
+    font-size: 60px;
+    line-height: 290px;
     font-family: "TT Norms";
-    font-weight: 700;
+    font-weight: 400;
+    letter-spacing: 30px;
   }
 }
-@media (max-width: 500px) {
-  .page-team-title {
-    font-size: 32px;
-    line-height: 38px;
+@media (max-width: 550px) {
+  .team-photo-title {
+    font-size: 45px;
+    line-height: 290px;
     font-family: "TT Norms";
-    font-weight: 700;
-    padding: 0;
-    padding-top: 20px;
+    font-weight: 400;
+    letter-spacing: 25px;
+  }
+}
+@media (max-width: 550px) {
+  .team-photo-title {
+    font-size: 36px;
+    line-height: 290px;
+    font-family: "TT Norms";
+    font-weight: 400;
+    letter-spacing: 20px;
   }
 }
 
-.content-wrap {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding-top: 30px;
-  padding-bottom: 50px;
-}
-@media (max-width: 500px) {
-  .content-wrap {
-    padding-top: 10px;
-    justify-content: flex-start;
-  }
+.bc3 {
+  border: 2px solid #e6e6f0;
 }
 
-.content-item {
-  max-width: 413px;
-  box-sizing: border-box;
-  padding-top: 40px;
+.carusel-title {
+  text-align: center;
+  padding: 30px 0;
 }
-@media (max-width: 500px) {
-  .content-item {
-    padding-top: 10px;
-    display: flex;
-  }
-}
-.content-item .content-photo {
-  max-width: 100%;
-  padding: 10px;
-}
-@media (max-width: 500px) {
-  .content-item .content-photo {
-    max-width: 158px;
-    border-radius: 20px;
-  }
-}
-.content-item .info-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 10px;
-}
-@media (max-width: 500px) {
-  .content-item .info-wrap {
-    flex-direction: column;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-    padding-left: 5px;
-    padding-bottom: 10px;
-  }
-}
-@media (max-width: 500px) {
-  .content-item .info-wrap .text-wrapper .item-name {
-    line-height: 21px;
-    padding: 0;
-  }
-}
-.content-item .info-wrap .text-wrapper .item-name:hover {
-  font-weight: 700;
-}
-@media (max-width: 500px) {
-  .content-item .info-wrap .text-wrapper .item-cond {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-}
-.content-item .info-wrap .arrow-box {
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-}
-.content-item .info-wrap .arrow-box:hover {
-  background-color: #24a3ff;
-}
-.content-item .info-wrap .arrow-box:hover .arrow {
-  border-color: #fff;
-}
-.content-item .info-wrap .arrow-box .arrow {
-  transform: scaleY(1.8) scaleX(1.4) rotate(-45deg) translateX(-1px) translateY(-1px);
-}
-
 #navteam {
   border-bottom-color: #f0145a;
   color: #f0145a;
@@ -1103,12 +1371,4 @@ line-height (optional) -z
 
 .burger-menu .dropdown #burgteam {
   color: #f0145a;
-}
-
-.bc1 {
-  border-color: #fff;
-}
-
-.bc3 {
-  border-color: #24a3ff;
 }
